@@ -1,0 +1,25 @@
+#destContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  &:after {
+    content: '';
+    margin-top: 100%;
+    margin-bottom: 100%;
+  }
+}
+
+
+.dest {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+#dest1 {
+}
+
+#dest4 {
+}

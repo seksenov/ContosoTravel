@@ -5,11 +5,16 @@ require('jquery-ui');
 
 var DateSel = React.createClass({
   componentDidMount: function() {
-    $('#calendar').datepicker();
+    $('#datepicker').datepicker();
   },
   render: function() {
     return (
-      <div id="calendar" className=""></div>
+      <div>
+        <div id="calendarContainer">
+          <div id="datepicker" className="calendar"></div>
+        </div>
+        <div id="background" className ={this.props.currentCity}></div>
+      </div>
     );
   }
 });

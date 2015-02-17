@@ -1,40 +1,6 @@
 @import "normalize";
 //@import "onepagescroll";
 @import "fullPage";
-
-#destContainer {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  &:after {
-    content: '';
-    margin-top: 100%;
-    margin-bottom: 100%;
-  }
-}
-
-
-.dest {
-  width: 50%;
-  height: 50%;
-  float: left;
-}
-
-#dest1 {
-  background: #DDD;
-}
-
-#dest4 {
-  background: #DDD;
-}
-
-#navbar {
-  background: black;
-  width: 100%;
-  height: 75px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
+@import "destsel";
+@import "datesel";
+@import "cities";
