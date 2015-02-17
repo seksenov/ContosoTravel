@@ -11,8 +11,8 @@ var App = React.createClass({
   },
   cities: [
     'barcelona', 
+    'verisailles',
     'redmond',
-    'verisalles',
     'barcelonazoo'
   ],
   getClickedCityIdx: function(idx) {
@@ -29,7 +29,7 @@ var App = React.createClass({
     return (
       <div id="main">
         <div className="section">
-          <LocationSel></LocationSel>
+          <LocationSel onChosenCity={this.getClickedCityIdx}></LocationSel>
         </div>
         <div className="section">
           <DateSel currentCity={this.cities[this.state.cityIdx]}></DateSel>
