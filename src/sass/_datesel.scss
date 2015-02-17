@@ -8,10 +8,14 @@ body {
 }
 
 #background {
-  width: 100%;
-  height: 100%;
+  filter: blur(5px) brightness(0.5);
+  width: 110%;
+  height: 110%;
+  left: -1%;
+  top: -1%;
+  margin: -1%;
   position: absolute;
-  z-index: -1;
+  z-index: -10;
 }
 
 #textDateContainer {

@@ -3,7 +3,10 @@ var React = require('react');
 var ContactSel = React.createClass({
   render: function() {
     return (
-      <div>Contact Selector Goes Here</div>
+      <div>
+        <div>Contact Selector Goes Here</div>
+        <div id="contactBg"></div>
+      </div>
     );
   }
 });
