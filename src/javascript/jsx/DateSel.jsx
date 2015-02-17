@@ -11,11 +11,15 @@ var DateSel = React.createClass({
       maxPicks: 2
     });
   },
+  confirmDates: function() {
+    this.props.onDatesSelected($('#datepicker').multiDatesPicker('getDates'));
+  },
   render: function() {
     return (
       <div>
         <div id="calendarContainer">
           <div id="datepicker" className="calendar"></div>
+          <button onClick={this.confirmDates}>Confirm</button>
         </div>
         <div id="background" className ={this.props.currentCity}></div>
       </div>

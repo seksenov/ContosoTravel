@@ -7,7 +7,10 @@ var ContactSel = require('./ContactSel.jsx');
 
 var App = React.createClass({
   getInitialState: function() {
-    return {cityIdx: 0};
+    return {
+      cityIdx: 0,
+      dates: []
+    };
   },
   cities: [
     'barcelona', 
@@ -17,6 +20,9 @@ var App = React.createClass({
   ],
   getClickedCityIdx: function(idx) {
     this.setState({cityIdx: idx});
+  },
+  getSelectedDates: function(selection) {
+    this.setState({dates: selection});
   },
   componentDidMount: function() {
     fullpage('#main', {
@@ -32,7 +38,7 @@ var App = React.createClass({
           <LocationSel onChosenCity={this.getClickedCityIdx}></LocationSel>
         </div>
         <div className="section">
-          <DateSel currentCity={this.cities[this.state.cityIdx]}></DateSel>
+          <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
         </div>
         <div className="section">
           <ContactSel></ContactSel>
