@@ -13,13 +13,17 @@ var LocationSel = React.createClass({
   setDest4: function() {
     this.props.onChosenCity(3);
   },
+  handleClick: function(i) {
+    this.props.onChosenCity(i);
+  },
   render: function() {
     return (
       <div id="destContainer">
-        <div onClick={this.setDest1} className="dest barcelona" id="dest1"></div>
-        <div onClick={this.setDest2} className="dest verisailles" id="dest2"></div>
-        <div onClick={this.setDest3} className="dest redmond" id="dest3"></div>
-        <div onClick={this.setDest4} className="dest barcelonazoo" id="dest4"></div>
+      {this.props.cities.map(function(city, i) {
+        return (
+          <div className={"dest " + city} onClick={this.handleClick.bind(this, i)} key={i}></div>
+        );
+       }, this)}
       </div>
     );
   }

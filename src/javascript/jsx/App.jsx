@@ -35,7 +35,7 @@ var App = React.createClass({
     return (
       <div id="main">
         <div className="section">
-          <LocationSel onChosenCity={this.getClickedCityIdx}></LocationSel>
+          <LocationSel cities={this.cities} onChosenCity={this.getClickedCityIdx}></LocationSel>
         </div>
         <div className="section">
           <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
