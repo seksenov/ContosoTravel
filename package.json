@@ -17,8 +17,7 @@
     "and available to browserify-shim as 'plugin' on line 30."
   ],
   "browser": {
-    "fullPage": "./src/javascript/vendor/jquery.fullPage.js",
-    "multiDatesPicker": "./src/javascript/vendor/jquery-ui.multidatespicker.js"
+    "fullPage": "./src/javascript/vendor/jquery.fullPage.js"
   },
   "browserify": {
     "transform": [

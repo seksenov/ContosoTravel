@@ -1,25 +1,41 @@
 var React = require('react');
 var $ = require('jquery');
 
-//require('jquery-ui');
-require('multiDatesPicker');
+require('jquery-ui');
 
 var DateSel = React.createClass({
+  getInitialState: function() {
+    return {
+      departure: '',
+      arrival:'' 
+    };
+  },
+  dp: {},
   componentDidMount: function() {
-    //$('#datepicker').datepicker();
-    $('#datepicker').multiDatesPicker({
-      maxPicks: 2
+    this.dp = $('#datepicker').datepicker().hide();
+    var that = this;
+    this.setState({departure: this.dp.datepicker('getDate')});
+    this.dp.on('change', function() {
+      var date = that.dp.datepicker('getDate');
+      console.log(typeof date);
+      that.setState({departure: date});
+      that.dp.hide();
     });
   },
   confirmDates: function() {
-    this.props.onDatesSelected($('#datepicker').multiDatesPicker('getDates'));
+  },
+  handleClick: function() {
+    this.dp.toggle();
   },
   render: function() {
     return (
       <div>
         <div id="calendarContainer">
+          <div id="textDateContainer">
+            <div id="departure" onClick={this.handleClick}>Click{this.state.departure}</div> 
+            <div id="arrival" onClick={this.handleClick}>Click</div> 
+          </div>
           <div id="datepicker" className="calendar"></div>
-          <button onClick={this.confirmDates}>Confirm</button>
         </div>
         <div id="background" className ={this.props.currentCity}></div>
       </div>
