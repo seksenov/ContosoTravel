@@ -1,30 +1,39 @@
 var React = require('react');
 var $ = require('jquery');
+var moment = require('moment');
 
 require('jquery-ui');
 
 var DateSel = React.createClass({
   getInitialState: function() {
     return {
-      departure: '',
-      arrival:'' 
+      departure: {},
+      arrival: {},
+      changing: ''
     };
   },
   dp: {},
   componentDidMount: function() {
+    var dateFormat = 'dddd, Do MMM YYYY';
     this.dp = $('#datepicker').datepicker().hide();
     var that = this;
-    this.setState({departure: this.dp.datepicker('getDate')});
+    var date = this.dp.datepicker('getDate');
+    var fdate = moment(date).format(dateFormat);
+    this.setState({departure: fdate});
+    this.setState({arrival: fdate});
     this.dp.on('change', function() {
       var date = that.dp.datepicker('getDate');
-      console.log(typeof date);
-      that.setState({departure: date});
+      fdate = moment(date).format(dateFormat);
+      var dateObj = {};
+      dateObj[that.state.changing] = fdate;
+      that.setState(dateObj);
       that.dp.hide();
     });
   },
   confirmDates: function() {
   },
-  handleClick: function() {
+  handleClick: function(val) {
+    this.setState({changing: val});
     this.dp.toggle();
   },
   render: function() {
@@ -32,8 +41,8 @@ var DateSel = React.createClass({
       <div>
         <div id="calendarContainer">
           <div id="textDateContainer">
-            <div id="departure" onClick={this.handleClick}>Click{this.state.departure}</div> 
-            <div id="arrival" onClick={this.handleClick}>Click</div> 
+            <div id="departure" onClick={this.handleClick.bind(this, 'departure')}>{this.state.departure}</div> 
+            <div id="arrival" onClick={this.handleClick.bind(this, 'arrival')}>{this.state.arrival}</div> 
           </div>
           <div id="datepicker" className="calendar"></div>
         </div>
