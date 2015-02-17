@@ -1,18 +1,6 @@
 var React = require('react');
 
 var LocationSel = React.createClass({
-  setDest1: function() {
-    this.props.onChosenCity(0);
-  },
-  setDest2: function() {
-    this.props.onChosenCity(1);
-  },
-  setDest3: function() {
-    this.props.onChosenCity(2);
-  },
-  setDest4: function() {
-    this.props.onChosenCity(3);
-  },
   handleClick: function(i) {
     this.props.onChosenCity(i);
   },
