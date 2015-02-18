@@ -33,7 +33,7 @@ exports.addContact = function(cb) {
         var thumbnail = URL.createObjectURL(contact.thumbnail, { oneTimeOnly: true }); 
         var picture = document.createElement("image");
         picture.src = thumbnail;
-        cb(name, picture);
+        cb({'name:': name, 'picture': picture}, null);
       } else { 
         // The picker was dismissed without selecting a contact 
         console("No contact was selected");

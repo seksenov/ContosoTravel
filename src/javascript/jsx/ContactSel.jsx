@@ -8,6 +8,14 @@ var ContactSel = React.createClass({
     return (
       <div>
         <button onClick={this.handleClick} id="friendButton">Take a Friend</button>
+        {this.props.contacts.map(function(contact, i) {
+          return (
+              <div>
+                {contact.image}
+                <div>{contact.name}</div>
+              </div>
+          );
+        }, this)}
         <div id="contactBg"></div>
       </div>
     );
