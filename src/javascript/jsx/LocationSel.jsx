@@ -9,7 +9,7 @@ var LocationSel = React.createClass({
       <div id="destContainer">
       {this.props.cities.map(function(city, i) {
         return (
-          <div className={"dest " + city} onClick={this.handleClick.bind(this, i)} key={i}></div>
+          <div className={"dest " + city} onClick={this.handleClick.bind(this, i)} key={i}><div className="title">{city}</div></div>
         );
        }, this)}
       </div>

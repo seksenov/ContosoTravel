@@ -13,10 +13,10 @@ var App = React.createClass({
     };
   },
   cities: [
-    'barcelona', 
-    'verisailles',
-    'redmond',
-    'barcelonazoo'
+    'Barcelona', 
+    'Verisailles',
+    'Redmond',
+    'Barcelonazoo'
   ],
   getClickedCityIdx: function(idx) {
     this.setState({cityIdx: idx});
