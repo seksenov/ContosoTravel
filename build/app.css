@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 9, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 9, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -16,7 +16,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 19, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 19, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 body {
   margin: 0; }
 
@@ -28,7 +28,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 45, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 45, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -36,7 +36,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 57, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 57, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 audio, canvas, progress, video {
   display: inline-block;
   /* 1 */
@@ -47,7 +47,7 @@ audio, canvas, progress, video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 67, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 67, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -56,7 +56,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 78, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 78, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 [hidden], template {
   display: none; }
 
@@ -65,14 +65,14 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 89, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 89, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 a {
   background-color: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 98, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 98, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 a:active, a:hover {
   outline: 0; }
 
@@ -81,21 +81,21 @@ a:active, a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 109, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 109, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 118, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 118, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 b, strong {
   font-weight: bold; }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 126, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 126, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 dfn {
   font-style: italic; }
 
@@ -103,7 +103,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 135, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 135, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -111,7 +111,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 144, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 144, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -119,25 +119,25 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 153, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 153, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 162, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 162, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 169, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 169, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 173, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 173, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
@@ -146,14 +146,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 184, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 184, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 192, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 192, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -162,14 +162,14 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 203, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 203, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 211, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 211, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0; }
@@ -177,14 +177,14 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 221, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 221, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 232, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 232, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
@@ -201,7 +201,7 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 256, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 256, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 button, input, optgroup, select, textarea {
   color: inherit;
   /* 1 */
@@ -213,7 +213,7 @@ button, input, optgroup, select, textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 266, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 266, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 button {
   overflow: visible; }
 
@@ -223,7 +223,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 278, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 278, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 button, select {
   text-transform: none; }
 
@@ -234,7 +234,7 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 293, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 293, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -244,14 +244,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 303, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 303, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 312, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 312, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -260,7 +260,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 322, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 322, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 input {
   line-height: normal; }
 
@@ -271,7 +271,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 335, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 335, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
@@ -283,7 +283,7 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 347, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 347, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
@@ -292,7 +292,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 357, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 357, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -304,14 +304,14 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 371, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 371, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 379, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 379, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -321,7 +321,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 390, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 390, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -331,7 +331,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 399, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 399, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -339,7 +339,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 408, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 408, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 optgroup {
   font-weight: bold; }
 
@@ -348,12 +348,12 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 419, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 419, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 425, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+/* line 425, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_normalize.scss */
 td, th {
   padding: 0; }
 
@@ -364,7 +364,7 @@ td, th {
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
-/* line 8, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 8, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -372,7 +372,7 @@ html, body {
   /*Avoid flicker on slides transitions for mobile phones #336 */
   -webkit-tap-highlight-color: transparent; }
 
-/* line 16, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 16, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #superContainer {
   height: 100%;
   position: relative;
@@ -381,23 +381,23 @@ html, body {
   /* IE 11 on Windows Phone 8.1*/
   touch-action: none; }
 
-/* line 26, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 26, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-section {
   position: relative;
   /* Safari<=5 Android<=3 */
   /* <=28 */
   box-sizing: border-box; }
 
-/* line 32, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 32, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slide {
   float: left; }
 
-/* line 35, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 35, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slide, .fp-slidesContainer {
   height: 100%;
   display: block; }
 
-/* line 39, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 39, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slides {
   z-index: 1;
   height: 100%;
@@ -406,24 +406,24 @@ html, body {
   /* Safari<=6 Android<=4.3 */
   transition: all 0.3s ease-out; }
 
-/* line 47, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 47, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-section.fp-table, .fp-slide.fp-table {
   display: table;
   table-layout: fixed;
   width: 100%; }
 
-/* line 52, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 52, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-tableCell {
   display: table-cell;
   width: 100%;
   height: 100%; }
 
-/* line 58, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 58, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slidesContainer {
   float: left;
   position: relative; }
 
-/* line 62, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 62, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-controlArrow {
   position: absolute;
   z-index: 4;
@@ -436,28 +436,28 @@ html, body {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-/* line 75, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 75, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-controlArrow.fp-prev {
   left: 15px;
   width: 0;
   border-width: 38.5px 34px 38.5px 0;
   border-color: transparent #fff transparent transparent; }
 
-/* line 81, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 81, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-controlArrow.fp-next {
   right: 15px;
   border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent #fff; }
 
-/* line 86, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 86, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-scrollable {
   overflow: scroll; }
 
-/* line 90, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 90, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-notransition {
   transition: none !important; }
 
-/* line 94, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 94, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav {
   position: fixed;
   z-index: 100;
@@ -466,35 +466,35 @@ html, body {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0); }
 
-/* line 102, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 102, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav.right {
   right: 17px; }
 
-/* line 105, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 105, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav.left {
   left: 17px; }
 
-/* line 108, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 108, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slidesNav {
   position: absolute;
   z-index: 4;
   left: 50%;
   opacity: 1; }
 
-/* line 114, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 114, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slidesNav.bottom {
   bottom: 17px; }
 
-/* line 117, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 117, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slidesNav.top {
   top: 17px; }
 
-/* line 121, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 121, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul, .fp-slidesNav ul {
   margin: 0;
   padding: 0; }
 
-/* line 126, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 126, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li, .fp-slidesNav ul li {
   display: block;
   width: 14px;
@@ -502,11 +502,11 @@ html, body {
   margin: 7px;
   position: relative; }
 
-/* line 133, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 133, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 .fp-slidesNav ul li {
   display: inline-block; }
 
-/* line 137, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 137, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li a, .fp-slidesNav ul li a {
   display: block;
   position: relative;
@@ -516,11 +516,11 @@ html, body {
   cursor: pointer;
   text-decoration: none; }
 
-/* line 147, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 147, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
   background: white; }
 
-/* line 151, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 151, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   top: 2px;
   left: 2px;
@@ -532,7 +532,7 @@ html, body {
   position: absolute;
   z-index: 1; }
 
-/* line 163, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 163, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li .fp-tooltip {
   position: absolute;
   top: -2px;
@@ -546,34 +546,34 @@ html, body {
   opacity: 0;
   width: 0; }
 
-/* line 176, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 176, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li:hover .fp-tooltip {
   transition: opacity 0.2s ease-in;
   width: auto;
   opacity: 1; }
 
-/* line 182, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 182, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li .fp-tooltip.right {
   right: 20px; }
 
-/* line 185, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+/* line 185, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_fullPage.scss */
 #fp-nav ul li .fp-tooltip.left {
   left: 20px; }
 
-/* line 1, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+/* line 1, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_locationsel.scss */
 #destContainer {
   position: absolute;
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0; }
-  /* line 7, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  /* line 7, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_locationsel.scss */
   #destContainer:after {
     content: '';
     margin-top: 100%;
     margin-bottom: 100%; }
 
-/* line 14, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+/* line 14, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_locationsel.scss */
 #locationPrompt {
   position: absolute;
   top: 0;
@@ -589,7 +589,7 @@ html, body {
   width: 750px;
   height: 75px; }
 
-/* line 31, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+/* line 31, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_locationsel.scss */
 .title {
   font-size: 300%;
   color: white;
@@ -602,29 +602,33 @@ html, body {
   right: 0;
   margin: auto; }
 
-/* line 45, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+/* line 45, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_locationsel.scss */
 .dest {
   width: 50%;
   height: 50%;
   float: left; }
 
-/* line 5, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+/* line 5, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
 body {
   background: #f7f6f3;
   font-family: sans-serif; }
 
-/* line 10, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+/* line 10, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
 .dateText {
   margin: 50px; }
 
-/* line 14, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+/* line 14, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
 #background {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -10; }
 
+<<<<<<< HEAD
 /* line 21, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 25, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 #textDateContainer {
   position: absolute;
   top: 0;
@@ -638,7 +642,11 @@ body {
   font-size: 300%;
   color: white; }
 
+<<<<<<< HEAD
 /* line 35, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 39, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .calendar {
   position: absolute;
   width: 280px;
@@ -649,7 +657,11 @@ body {
   border-radius: 4px;
   overflow: hidden; }
 
+<<<<<<< HEAD
 /* line 45, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 49, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-header {
   height: 50px;
   line-height: 50px;
@@ -657,7 +669,11 @@ body {
   background: #e9e5e3;
   margin-bottom: 10px; }
 
+<<<<<<< HEAD
 /* line 53, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 57, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-prev, .ui-datepicker-next {
   width: 20px;
   height: 20px;
@@ -668,29 +684,49 @@ body {
   overflow: hidden;
   margin-top: 12px; }
 
+<<<<<<< HEAD
 /* line 63, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 67, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-prev {
   float: left;
   margin-left: 12px; }
 
+<<<<<<< HEAD
 /* line 67, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 71, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-prev:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin: -43px 0px 0px 8px; }
 
+<<<<<<< HEAD
 /* line 71, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 75, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-next {
   float: right;
   margin-right: 12px; }
 
+<<<<<<< HEAD
 /* line 75, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 79, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-next:after {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   margin: -43px 0px 0px 6px; }
 
+<<<<<<< HEAD
 /* line 80, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 84, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-prev:after, .ui-datepicker-next:after {
   content: '';
   position: absolute;
@@ -700,6 +736,7 @@ body {
   border-left: 2px solid #b0aead;
   border-bottom: 2px solid #b0aead; }
 
+<<<<<<< HEAD
 /* line 92, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
 .ui-datepicker-prev:hover, .ui-datepicker-next:hover, .ui-datepicker-prev:hover:after, .ui-datepicker-next:hover:after {
   border-color: #5ed1cc; }
@@ -709,11 +746,26 @@ body {
   text-align: center; }
 
 /* line 98, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 96, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover, .ui-datepicker-prev:hover:after, .ui-datepicker-next:hover:after {
+  border-color: #5ed1cc; }
+
+/* line 99, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-title {
+  text-align: center; }
+
+/* line 102, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-calendar {
   width: 100%;
   text-align: center; }
 
+<<<<<<< HEAD
 /* line 102, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 106, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-calendar thead tr th span {
   display: block;
   width: 40px;
@@ -721,7 +773,11 @@ body {
   margin-bottom: 5px;
   font-size: 13px; }
 
+<<<<<<< HEAD
 /* line 109, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 113, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-state-default {
   display: block;
   text-decoration: none;
@@ -729,6 +785,7 @@ body {
   line-height: 40px;
   font-size: 12px; }
 
+<<<<<<< HEAD
 /* line 116, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
 .ui-state-default:hover {
   background: rgba(0, 0, 0, 0.02); }
@@ -742,55 +799,70 @@ body {
   color: #5ed1cc; }
 
 /* line 125, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+=======
+/* line 120, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+.ui-state-default:hover {
+  background: rgba(0, 0, 0, 0.02); }
+
+/* line 123, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+.ui-state-highlight {
+  color: #8dd391; }
+
+/* line 126, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+.ui-state-active {
+  color: #5ed1cc; }
+
+/* line 129, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_datesel.scss */
+>>>>>>> 1b9c2b94296275f3ad32c5fe4a475bdd24f27bac
 .ui-datepicker-unselectable .ui-state-default {
   color: #eee; }
 
-/* line 6, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 6, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .Barcelona {
   background: url('./images/BarcelonaMain.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 10, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 10, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .Seattle {
   background: url('./images/SeattleMain.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 14, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 14, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .London {
   background: url('./images/LondonMain.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 18, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 18, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .Paris {
   background: url('./images/ParisMain.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 22, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 22, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .BarcelonaSecond {
   background: url('./images/BarcelonaSecond.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 26, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 26, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .BarcelonaThird {
   background: url('./images/BarcelonaThird.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 30, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 30, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .LondonSecond {
   background: url('./images/LondonSecond.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 34, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 34, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .ParisSecond {
   background: url('./images/ParisSecond.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 38, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+/* line 38, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_cities.scss */
 .SeattleSecond {
   background: url('./images/SeattleSecond.jpg') no-repeat center center;
   background-size: cover; }
 
-/* line 1, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_contactsel.scss */
+/* line 1, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_contactsel.scss */
 #contactBg {
   background-color: black;
   z-index: -5;
@@ -799,7 +871,7 @@ body {
   position: absolute;
   top: 0; }
 
-/* line 10, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_contactsel.scss */
+/* line 10, c:/Users/kiseksen/Documents/GitHub/ContosoTravel/src/sass/_contactsel.scss */
 #friendButton {
   position: absolute;
   text-align: center;
