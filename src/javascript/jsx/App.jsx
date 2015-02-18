@@ -7,6 +7,8 @@ var ContactSel = require('./ContactSel.jsx');
 var ConfirmationPage = require('./ConfirmationPage.jsx');
 var AddtoCal = require('./AddtoCal.jsx');
 
+var plugins = require('plugins');
+
 var App = React.createClass({
   getInitialState: function() {
     return {
@@ -27,6 +29,9 @@ var App = React.createClass({
   getSelectedDates: function(selection) {
     this.setState({dates: selection});
   },
+  callContactsAPI: function() {
+    plugins.addContact();
+  },
   componentDidMount: function() {
     fullpage.init('#main', {
       resize: false,
@@ -44,7 +49,7 @@ var App = React.createClass({
           <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
         </div>
         <div className="section">
-          <ContactSel></ContactSel>
+          <ContactSel winAPIs={this.callContactsAPI}></ContactSel>
         </div>
         <div className="section">
           <AddtoCal></AddtoCal>
