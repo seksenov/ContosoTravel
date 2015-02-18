@@ -1,14 +1,14 @@
 var React = require('react');
 
-var ContactSel = React.createClass({
+var AddtoCal = React.createClass({
   render: function() {
     return (
       <div>
-        <button id="friendButton">Take a Friend</button>
+        <button id="friendButton">Add to Calendar</button>
         <div id="contactBg"></div>
       </div>
     );
   }
 });
 
-module.exports = ContactSel;
+module.exports = AddtoCal;

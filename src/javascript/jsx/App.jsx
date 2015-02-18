@@ -5,6 +5,7 @@ var LocationSel = require('./LocationSel.jsx');
 var DateSel = require('./DateSel.jsx');
 var ContactSel = require('./ContactSel.jsx');
 var ConfirmationPage = require('./ConfirmationPage.jsx');
+var AddtoCal = require('./AddtoCal.jsx');
 
 var App = React.createClass({
   getInitialState: function() {
@@ -44,6 +45,9 @@ var App = React.createClass({
         </div>
         <div className="section">
           <ContactSel></ContactSel>
+        </div>
+        <div className="section">
+          <AddtoCal></AddtoCal>
         </div>
         <div className="section">
           <ConfirmationPage></ConfirmationPage>

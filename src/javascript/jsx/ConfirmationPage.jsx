@@ -3,7 +3,9 @@ var React = require('react');
 var ConfirmationPage = React.createClass({
   render: function() {
     return (
-        <div>placeholder</div>
+      <div>
+        <div id="friendButton">Success!</div>
+      </div>
     );
   }
 });

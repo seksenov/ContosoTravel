@@ -1,19 +1,20 @@
-.Barcelona {
-  background: url(./images/barcelona.jpg) no-repeat center center;
+@mixin fullBgImg($image) {
+  background: url($image) no-repeat center center;
   background-size: cover;
+}
+
+.Barcelona {
+  @include fullBgImg('./images/barcelona.jpg');
 }
 
 .Redmond {
-  background: url(./images/redmond.jpg) no-repeat center center;
-  background-size: cover;
+  @include fullBgImg('./images/redmond.jpg');
 }
 
 .Verisailles {
-  background: url(./images/verisailles.jpg) no-repeat center center;
-  background-size: cover;
+  @include fullBgImg('./images/verisailles.jpg');
 }
 
 .Barcelonazoo {
-  background: url(./images/barcelonazoo.jpg) no-repeat center center;
-  background-size: cover;
+  @include fullBgImg('./images/barcelonazoo.jpg');
 }
