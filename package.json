@@ -17,7 +17,8 @@
     "and available to browserify-shim as 'plugin' on line 30."
   ],
   "browser": {
-    "fullPage": "./src/javascript/vendor/jquery.fullPage.js"
+    "fullPage": "./src/javascript/vendor/jquery.fullPage.js",
+    "plugins": "./src/javascript/vendor/plugins.js"
   },
   "browserify": {
     "transform": [
