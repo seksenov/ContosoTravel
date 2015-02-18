@@ -21,7 +21,7 @@ var App = React.createClass({
   ],
   getClickedCityIdx: function(idx) {
     this.setState({cityIdx: idx});
-    fullpage.controls.moveSectionDown();
+    fullpage.controls.moveTo(2);
   },
   getSelectedDates: function(selection) {
     this.setState({dates: selection});
