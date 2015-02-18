@@ -28,9 +28,13 @@ var App = React.createClass({
   },
   getSelectedDates: function(selection) {
     this.setState({dates: selection});
+    fullpage.controls.moveTo(3);
   },
   callContactsAPI: function() {
-    plugins.addContact();
+    plugins.addContact(fullpage.controls.moveTo.bind(this, 4));
+  },
+  callAppointmentAPI: function() {
+    plugins.addAppointment(fullpage.controls.moveTo.bind(this, 5));
   },
   componentDidMount: function() {
     fullpage.init('#main', {
@@ -49,10 +53,10 @@ var App = React.createClass({
           <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
         </div>
         <div className="section">
-          <ContactSel winAPIs={this.callContactsAPI}></ContactSel>
+          <ContactSel winAPI={this.callContactsAPI}></ContactSel>
         </div>
         <div className="section">
-          <AddtoCal></AddtoCal>
+          <AddtoCal winAPI={this.callAppointmentAPI}></AddtoCal>
         </div>
         <div className="section">
           <ConfirmationPage></ConfirmationPage>

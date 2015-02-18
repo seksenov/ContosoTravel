@@ -1,4 +1,4 @@
-exports.addAppointment = function() {
+exports.addAppointment = function(cb) {
   if (typeof Windows != 'undefined') {
     var appointment = new Windows.ApplicationModel.Appointments.Appointment();
 
@@ -10,13 +10,16 @@ exports.addAppointment = function() {
       .done(function (appointmentId) {
         if (appointmentId) {
           console.log('created!');
+          cb();
         } else {
           console.log('issue');
         }
       });
+  } else {
+    cb();
   }
 }
-exports.addContact = function() {
+exports.addContact = function(cb) {
   console.log('plugin: addContact');
   if(typeof Windows != 'undefined') {
     // Create the picker 
@@ -31,9 +34,11 @@ exports.addContact = function() {
         // The picker was dismissed without selecting a contact 
         console("No contact was selected"); 
       } 
+      cb();
     });
   } else {
     console.log("ERROR: No Windows namespace was detected");  
+    cb();
   }
 }
 exports.showToast = function(message) {

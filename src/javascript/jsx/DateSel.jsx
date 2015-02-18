@@ -30,11 +30,12 @@ var DateSel = React.createClass({
       that.dp.hide();
     });
   },
-  confirmDates: function() {
-  },
   handleClick: function(val) {
     this.setState({changing: val});
     this.dp.toggle();
+  },
+  handleConfirm: function() {
+    this.props.onDatesSelected();
   },
   render: function() {
     return (
@@ -43,6 +44,7 @@ var DateSel = React.createClass({
           <div id="textDateContainer">
             <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>Departure: {this.state.departure}</div> 
             <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>Return: {this.state.returning}</div> 
+            <button onClick={this.handleConfirm}>Confirm</button>
           </div>
           <div id="datepicker" className="calendar"></div>
         </div>

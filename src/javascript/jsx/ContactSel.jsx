@@ -2,7 +2,7 @@ var React = require('react');
 
 var ContactSel = React.createClass({
   handleClick: function() {
-    this.props.winAPIs();
+    this.props.winAPI();
   },
   render: function() {
     return (
