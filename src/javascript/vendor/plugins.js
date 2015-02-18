@@ -28,17 +28,22 @@ exports.addContact = function(cb) {
     // Open the picker for the user to select a contact 
     picker.pickContactAsync().done(function (contact) { 
       if (contact !== null) { 
-        var output = "Selected contact:\n" + contact.displayName; 
-        console.log(output); 
+        var name = "Selected contact:\n" + contact.displayName; 
+        console.log(name);
+        var thumbnail = URL.createObjectURL(contact.thumbnail, { oneTimeOnly: true }); 
+        var picture = document.createElement("image");
+        picture.src = thumbnail;
+        cb(name, picture);
       } else { 
         // The picker was dismissed without selecting a contact 
-        console("No contact was selected"); 
+        console("No contact was selected");
+        cb(null, "No contact was selected"); 
       } 
-      cb();
+      
     });
   } else {
     console.log("ERROR: No Windows namespace was detected");  
-    cb();
+    cb(null, "No Windows namespace was detected");
   }
 }
 exports.showToast = function(message) {
