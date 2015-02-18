@@ -4,17 +4,37 @@
 }
 
 .Barcelona {
-  @include fullBgImg('./images/barcelona.jpg');
+  @include fullBgImg('./images/BarcelonaMain.jpg');
 }
 
-.Redmond {
-  @include fullBgImg('./images/redmond.jpg');
+.Seattle {
+  @include fullBgImg('./images/SeattleMain.jpg');
 }
 
-.Verisailles {
-  @include fullBgImg('./images/verisailles.jpg');
+.London {
+  @include fullBgImg('./images/LondonMain.jpg');
 }
 
-.Barcelonazoo {
-  @include fullBgImg('./images/barcelonazoo.jpg');
+.Paris {
+  @include fullBgImg('./images/ParisMain.jpg');
+}
+
+.BarcelonaSecond {
+  @include fullBgImg('./images/BarcelonaSecond.jpg');
+}
+
+.BarcelonaThird {
+  @include fullBgImg('./images/BarcelonaThird.jpg');
+}
+
+.LondonSecond {
+  @include fullBgImg('./images/LondonSecond.jpg');
+}
+
+.ParisSecond {
+  @include fullBgImg('./images/ParisSecond.jpg');
+}
+
+.SeattleSecond {
+  @include fullBgImg('./images/SeattleSecond.jpg');
 }

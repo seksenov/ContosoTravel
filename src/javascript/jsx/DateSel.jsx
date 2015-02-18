@@ -48,7 +48,7 @@ var DateSel = React.createClass({
           </div>
           <div id="datepicker" className="calendar"></div>
         </div>
-        <div id="background" className ={this.props.currentCity}></div>
+        <div id="background" className ={this.props.currentCity + "Second"}></div>
       </div>
     );
   }

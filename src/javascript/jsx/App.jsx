@@ -18,9 +18,9 @@ var App = React.createClass({
   },
   cities: [
     'Barcelona', 
-    'Verisailles',
-    'Redmond',
-    'Barcelonazoo'
+    'Paris',
+    'London',
+    'Seattle'
   ],
   getClickedCityIdx: function(idx) {
     this.setState({cityIdx: idx});
