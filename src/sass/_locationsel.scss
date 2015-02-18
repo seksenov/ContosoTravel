@@ -11,6 +11,23 @@
   }
 }
 
+#locationPrompt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: black;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  vertical-align: middle;
+  width: 750px;
+  height: 75px;
+
+}
+
 .title {
   font-size: 300%;
   color: white;

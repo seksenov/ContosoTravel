@@ -8,7 +8,7 @@ var DateSel = React.createClass({
   getInitialState: function() {
     return {
       departure: {},
-      arrival: {},
+      returning: {},
       changing: ''
     };
   },
@@ -19,8 +19,8 @@ var DateSel = React.createClass({
     var that = this;
     var date = this.dp.datepicker('getDate');
     var fdate = moment(date).format(dateFormat);
-    this.setState({departure: fdate});
-    this.setState({arrival: fdate});
+    this.setState({departure: 'Pick a date...' });
+    this.setState({returning: 'Pick a date...' });
     this.dp.on('change', function() {
       var date = that.dp.datepicker('getDate');
       fdate = moment(date).format(dateFormat);
@@ -41,8 +41,8 @@ var DateSel = React.createClass({
       <div>
         <div id="calendarContainer">
           <div id="textDateContainer">
-            <div id="departure" onClick={this.handleClick.bind(this, 'departure')}>{this.state.departure}</div> 
-            <div id="arrival" onClick={this.handleClick.bind(this, 'arrival')}>{this.state.arrival}</div> 
+            <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>Departure: {this.state.departure}</div> 
+            <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>Return: {this.state.returning}</div> 
           </div>
           <div id="datepicker" className="calendar"></div>
         </div>

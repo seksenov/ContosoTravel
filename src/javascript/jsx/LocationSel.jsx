@@ -12,6 +12,7 @@ var LocationSel = React.createClass({
           <div className={"dest " + city} onClick={this.handleClick.bind(this, i)} key={i}><div className="title">{city}</div></div>
         );
        }, this)}
+      <div id="locationPrompt">Where do you want to go?</div>
       </div>
     );
   }
