@@ -16,7 +16,6 @@ var ContactSel = React.createClass({
               </div>
           );
         }, this)}
-        <div id="contactBg"></div>
       </div>
     );
   }
