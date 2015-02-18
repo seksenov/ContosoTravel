@@ -2038,4 +2038,5 @@ $.fn.fullpage = function(options) {
   }
 };
 
-module.exports = fp;
+exports.init = fp;
+exports.controls = $.fn.fullpage;

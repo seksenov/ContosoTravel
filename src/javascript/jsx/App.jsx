@@ -21,12 +21,13 @@ var App = React.createClass({
   ],
   getClickedCityIdx: function(idx) {
     this.setState({cityIdx: idx});
+    fullpage.controls.moveSectionDown();
   },
   getSelectedDates: function(selection) {
     this.setState({dates: selection});
   },
   componentDidMount: function() {
-    fullpage('#main', {
+    fullpage.init('#main', {
       resize: false,
       navigation: true,
       css3:true
@@ -36,7 +37,7 @@ var App = React.createClass({
     return (
       <div id="main">
         <div className="section">
-          <LocationSel cities={this.cities} onChosenCity={this.getClickedCityIdx}></LocationSel>
+          <LocationSel onClick={this.advancePage} cities={this.cities} onChosenCity={this.getClickedCityIdx}></LocationSel>
         </div>
         <div className="section">
           <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
