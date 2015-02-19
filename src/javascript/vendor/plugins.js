@@ -33,7 +33,7 @@ exports.addContact = function(cb) {
         //var thumbnail = URL.createObjectURL(contact.thumbnail, { oneTimeOnly: true }); 
         //var picture = document.createElement("image");
         //picture.src = thumbnail;
-        cb({'name:': name}, null);
+        cb({'name': name}, null);
       } else { 
         // The picker was dismissed without selecting a contact 
         console("No contact was selected");
@@ -43,7 +43,7 @@ exports.addContact = function(cb) {
     });
   } else {
     console.log("ERROR: No Windows namespace was detected");  
-    cb(null, 'no Windows namespace detected');
+    cb({'name': 'test'}, null);
     //cb(null, "No Windows namespace was detected");
   }
 }
