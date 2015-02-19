@@ -5,3 +5,25 @@
 @import "datesel";
 @import "cities";
 @import "contactsel";
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+.centeredText {
+  position: absolute;
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}

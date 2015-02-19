@@ -4,7 +4,8 @@ var ConfirmationPage = React.createClass({
   render: function() {
     return (
       <div>
-        <div id="friendButton">Success!</div>
+        <div className="centeredText">Success!</div>
+        <div className="background Airplane"></div>
       </div>
     );
   }

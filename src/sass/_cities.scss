@@ -38,3 +38,15 @@
 .SeattleSecond {
   @include fullBgImg('./images/SeattleSecond.jpg');
 }
+
+.Airplane {
+  @include fullBgImg('./images/Airplane.jpg');
+}
+
+.Friends {
+  @include fullBgImg('./images/Friends.jpg');
+}
+
+.Calendar {
+  @include fullBgImg('./images/Calendar.jpg');
+}

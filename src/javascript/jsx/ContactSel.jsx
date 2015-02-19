@@ -10,6 +10,7 @@ var ContactSel = React.createClass({
       <div>
         <button onClick={this.handleClick} id="friendButton">Take a Friend</button>
         <div id="contactName">{this.props.contacts}</div>
+        <div className="Friends background"></div>
       </div>
     );
   }

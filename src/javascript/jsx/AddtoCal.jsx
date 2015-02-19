@@ -8,7 +8,7 @@ var AddtoCal = React.createClass({
     return (
       <div>
         <button onClick={this.handleClick} id="friendButton">Add to Calendar</button>
-        <div id="contactBg"></div>
+        <div className="background Calendar"></div>
       </div>
     );
   }
