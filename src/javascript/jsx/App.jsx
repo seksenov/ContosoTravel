@@ -14,7 +14,7 @@ var App = React.createClass({
     return {
       cityIdx: 0,
       dates: [],
-      contacts: []
+      contacts: ''
     };
   },
   cities: [
@@ -32,20 +32,17 @@ var App = React.createClass({
     fullpage.controls.moveTo(3);
   },
   callContactsAPI: function() {
-    var that = this;
     plugins.addContact(function(contact, err) {
       if (err) {
         console.log(err);
       } else {
-        var temp = that.state.contacts;
-        temp.push(contact);
-        that.setState({contacts: temp});
-        fullpage.controls.moveTo.bind(that, 4);
+        this.setState({contacts: contact.name});
       }
-    });
+    }.bind(this));
   },
   callAppointmentAPI: function() {
     plugins.addAppointment(fullpage.controls.moveTo.bind(this, 5));
+    plugins.showToast('Pack your bags!');
   },
   componentDidMount: function() {
     fullpage.init('#main', {
@@ -64,7 +61,7 @@ var App = React.createClass({
           <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
         </div>
         <div className="section">
-          <ContactSel contacts={this.state.contacts} winAPI={this.callContactsAPI}></ContactSel>
+          <ContactSel ref="contactSel" contacts={this.state.contacts} winAPI={this.callContactsAPI}></ContactSel>
         </div>
         <div className="section">
           <AddtoCal winAPI={this.callAppointmentAPI}></AddtoCal>

@@ -30,10 +30,10 @@ exports.addContact = function(cb) {
       if (contact !== null) { 
         var name = "Selected contact:\n" + contact.displayName; 
         console.log(name);
-        var thumbnail = URL.createObjectURL(contact.thumbnail, { oneTimeOnly: true }); 
-        var picture = document.createElement("image");
-        picture.src = thumbnail;
-        cb({'name:': name, 'picture': picture}, null);
+        //var thumbnail = URL.createObjectURL(contact.thumbnail, { oneTimeOnly: true }); 
+        //var picture = document.createElement("image");
+        //picture.src = thumbnail;
+        cb({'name:': name}, null);
       } else { 
         // The picker was dismissed without selecting a contact 
         console("No contact was selected");
@@ -43,7 +43,8 @@ exports.addContact = function(cb) {
     });
   } else {
     console.log("ERROR: No Windows namespace was detected");  
-    cb(null, "No Windows namespace was detected");
+    cb(null, 'no Windows namespace detected');
+    //cb(null, "No Windows namespace was detected");
   }
 }
 exports.showToast = function(message) {
@@ -65,7 +66,7 @@ exports.showToast = function(message) {
     //Supply an image for the notification
     var toastImageElements = toastXml.getElementsByTagName("image");
     //Set the image this could be the background of the note, get the image from the web
-    toastImageElements[0].setAttribute("src", "https://raw.githubusercontent.com/seksenov/grouppost/master/images/logo.png");
+    toastImageElements[0].setAttribute("src", "https://raw.githubusercontent.com/seksenov/ContosoTravel/master/build/images/storelogo.png");
     toastImageElements[0].setAttribute("alt", "red graphic");
     //Specify a long duration
     var toastNode = toastXml.selectSingleNode("/toast");
