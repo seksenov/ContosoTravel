@@ -35,7 +35,11 @@ var DateSel = React.createClass({
     this.dp.toggle();
   },
   handleConfirm: function() {
-    this.props.onDatesSelected();
+    var that = this;
+    this.props.onDatesSelected({
+      departure: that.state.departure,
+      returning: that.state.returning
+    });
   },
   render: function() {
     return (

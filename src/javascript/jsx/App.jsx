@@ -13,7 +13,7 @@ var App = React.createClass({
   getInitialState: function() {
     return {
       cityIdx: 0,
-      dates: [],
+      dates: {},
       contacts: ''
     };
   },
