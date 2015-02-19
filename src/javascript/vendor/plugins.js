@@ -19,6 +19,7 @@ exports.addAppointment = function(cb) {
     cb();
   }
 }
+//
 exports.addContact = function(cb) {
   console.log('plugin: addContact');
   if(typeof Windows != 'undefined') {
