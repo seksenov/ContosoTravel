@@ -35,6 +35,9 @@ body {
   border-radius: 4px;
   overflow: hidden;
   transform: scale(3);
+  @media (max-height: 1080px) {
+    transform: scale(2);
+  }
 }
 
 .ui-datepicker-header {
