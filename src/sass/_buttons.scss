@@ -1,0 +1,27 @@
+.button-animate {
+  transition: all 0.1s;
+}
+
+.action-button {
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  border-color: #3498DB;
+  font-family: 'Segoe UI';
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.action-button:active {
+  transform: translate(0px,5px);
+  border-bottom: 1px solid #3498DB;
+}
+
+.blue {
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
