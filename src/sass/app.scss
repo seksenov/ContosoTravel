@@ -65,6 +65,13 @@ and (max-device-width: 480px) {
   bottom: 0;
 }
 
+.largeText {
+  font-size: 300%;
+  font-weight: 100;
+  color: white;
+  margin: 10%;
+}
+
 .contentContainer {
   position: absolute;
   top: 0;

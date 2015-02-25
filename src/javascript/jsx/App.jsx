@@ -42,7 +42,6 @@ var App = React.createClass({
   },
   callAppointmentAPI: function() {
     plugins.addAppointment(fullpage.controls.moveTo.bind(this, 5));
-    plugins.showToast('Pack your bags!');
   },
   componentDidMount: function() {
     fullpage.init('#main', {
@@ -67,7 +66,7 @@ var App = React.createClass({
           <AddtoCal winAPI={this.callAppointmentAPI}></AddtoCal>
         </div>
         <div className="section">
-          <ConfirmationPage></ConfirmationPage>
+          <ConfirmationPage city={this.cities[this.state.cityIdx]} dates={this.state.dates}></ConfirmationPage>
         </div>
       </div>
     );
