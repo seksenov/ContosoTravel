@@ -2,8 +2,8 @@
 --------------------------------------------- */
 
 .paneContainer {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 /* Background */
@@ -23,8 +23,8 @@
   padding: 0.75em 0.75em 0.5em;
   border-radius: 4px;
   text-transform: uppercase;
-  letter-spacing: 0.01rem;
-  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+  font-size: 0.75em;
   line-height: 1;
   background: rgba(0,0,0,0.1);
 }
@@ -32,13 +32,13 @@
   margin: 0 1rem 1.5rem 0;
   font-weight: 200;
   font-size: 2.5em;
+  line-height: 1.125;
 }
 
 /* Pane Content */
 .paneContent {
   margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.25em;
 }
 
 /* Button Bar */
@@ -46,10 +46,14 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding: 1em 0;
+	padding: 0.75em 0;
 	width: 100%;
 	text-align: right;
 	background: #fff;
+	font-size: 1.25em;
+}
+.paneButtons .container {
+  padding: 0 0.75em;
 }
 .paneButtons .buttonConfirm {
   background: #034f93;
@@ -58,3 +62,15 @@
 
 /* PANES - RESPONSIVE
 --------------------------------------------- */
+
+@media only screen and (min-width: 50em) {
+  
+  .stepLabel {
+    font-size: 0.5em;
+  }
+	.paneButtons .container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+}
