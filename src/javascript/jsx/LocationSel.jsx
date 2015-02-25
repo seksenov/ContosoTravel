@@ -10,7 +10,6 @@ var LocationSel = React.createClass({
   render: function() {
     return (
       <div id="destContainer">
-        <div onClick={this.handleRefresh} id="refreshButton">Refresh</div>
         {this.props.cities.map(function(city, i) {
           return (
             <div className={"dest " + city} onClick={this.handleClick.bind(this, i)} key={i}><div className="title">{city}</div></div>
