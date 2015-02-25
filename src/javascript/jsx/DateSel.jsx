@@ -48,8 +48,14 @@ var DateSel = React.createClass({
         <span className="stepLabel">Step 2 of 4</span>
         <h2 className="paneTitle">When do you want to go?</h2>
         <div className="paneContent">
-            <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>Departure: <span className="dateClickable">{this.state.departure}</span></div> 
-            <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>Return: <span className="dateClickable">{this.state.returning}</span></div> 
+            <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>
+              <span className="label">Departure</span>
+              <span className="value dateClickable">{this.state.departure}</span>
+            </div> 
+            <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>
+              <span className="textLabel">Return:</span>
+              <span className="value dateClickable">{this.state.returning}</span>
+            </div> 
         </div>
         <div id="calendarContainer">
           <div id="datepicker" className="calendar"></div>
@@ -57,7 +63,7 @@ var DateSel = React.createClass({
         </div>
         <div className="paneButtons">
         	<div className="container">
-	        	<button className="actionButton confirmButton" onClick={this.handleConfirm}>Confirm</button>
+	        	<button className="buttonAction buttonConfirm" onClick={this.handleConfirm}>Confirm</button>
 	        </div>
         </div>
         <div className ={this.props.currentCity + "Second background"}></div>
