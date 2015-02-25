@@ -8,11 +8,14 @@ body {
 }
 
 .dateText {
-  margin: 50px;
+  margin: 10%;
+  font-weight: 100;
+  font-size: 275%;
 }
 
-.confirmButton {
-  color: black;
+.dateClickable {
+  text-decoration: underline;
+  font-weight: 300;
 }
 
 #textDateContainer {
@@ -22,10 +25,9 @@ body {
   left: 0;
   right: 0;
   width: 70%;
-  height: 500px;
+  height: 80%;
   margin: auto;
   font-weight: 600;
-  font-size: 300%;
   color: white;
 }
 

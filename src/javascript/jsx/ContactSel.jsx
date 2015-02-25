@@ -8,8 +8,12 @@ var ContactSel = React.createClass({
   render: function() {
     return (
       <div>
-        <button onClick={this.handleClick} id="friendButton">Take a Friend</button>
-        <div id="contactName">{this.props.contacts}</div>
+        <div className="contentContainer">
+          <div className="promptText">Who do you want to go with?</div>
+          <button className="largeButton action-button button-animate blue" onClick={this.handleClick}>Choose a Friend</button>
+          <div id="contactName">{this.props.contacts}</div>
+          <button className="confirmButton action-button button-animate blue" onClick={this.handleConfirm}>Confirm</button>
+        </div>
         <div className="Friends background"></div>
       </div>
     );

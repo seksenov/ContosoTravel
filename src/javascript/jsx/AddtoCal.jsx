@@ -7,7 +7,10 @@ var AddtoCal = React.createClass({
   render: function() {
     return (
       <div>
-        <button onClick={this.handleClick} id="friendButton">Add to Calendar</button>
+        <div className="contentContainer">
+          <div className="promptText">Add to System Calendar?</div>
+          <button className="largeButton action-button button-animate blue" onClick={this.handleClick} id="friendButton">Add to Calendar</button>
+        </div>
         <div className="background Calendar"></div>
       </div>
     );

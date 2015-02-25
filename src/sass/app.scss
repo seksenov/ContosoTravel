@@ -21,6 +21,36 @@ and (max-device-width: 480px) {
   z-index: -10;
 }
 
+.promptText {
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  font-size: 300%;
+}
+
+.confirmButton {
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+}
+
+.largeButton {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 175px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 3em;
+
+}
+
 .centeredText {
   position: absolute;
   color: white;
@@ -33,4 +63,16 @@ and (max-device-width: 480px) {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.contentContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  font-weight: 600;
 }

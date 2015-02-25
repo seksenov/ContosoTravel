@@ -46,9 +46,10 @@ var DateSel = React.createClass({
       <div>
         <div id="calendarContainer">
           <div id="textDateContainer">
-            <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>Departure: {this.state.departure}</div> 
-            <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>Return: {this.state.returning}</div> 
-            <button className="action-button button-animate blue" onClick={this.handleConfirm}>Confirm</button>
+            <div className="promptText">When do you want to go?</div>
+            <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>Departure: <span className="dateClickable">{this.state.departure}</span></div> 
+            <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>Return: <span className="dateClickable">{this.state.returning}</span></div> 
+            <button className="confirmButton action-button button-animate blue" onClick={this.handleConfirm}>Confirm</button>
           </div>
           <div id="datepicker" className="calendar"></div>
         </div>
