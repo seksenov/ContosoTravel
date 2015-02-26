@@ -1,10 +1,10 @@
-exports.addAppointment = function(cb) {
+exports.addAppointment = function(cb, date, loc) {
   if (typeof Windows != 'undefined') {
     var appointment = new Windows.ApplicationModel.Appointments.Appointment();
 
     appointment.allDay = true;
-    appointment.startTime = new Date('2/16/2015');
-    appointment.subject = 'Trip to Barcelona';
+    appointment.startTime = new Date(date);
+    appointment.subject = 'Trip to ' + loc;
 
     Windows.ApplicationModel.Appointments.AppointmentManager.showAddAppointmentAsync(appointment, { x: 300, y: 0, width: 600, height: 100 })
       .done(function (appointmentId) {

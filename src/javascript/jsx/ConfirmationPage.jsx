@@ -3,7 +3,7 @@ var plugins = require('plugins');
 
 var ConfirmationPage = React.createClass({
   handleToast: function() {
-    plugins.showToast('Pack your bags!');
+    plugins.showToast('Pack your bags for ' + this.props.city + '. Leaving on ' + this.props.dates.departure);
   },
   render: function() {
     return (
