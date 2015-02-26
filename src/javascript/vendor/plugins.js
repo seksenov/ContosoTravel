@@ -38,7 +38,7 @@ exports.addContact = function(cb) {
         cb({'name': name}, null);
       } else { 
         // The picker was dismissed without selecting a contact 
-        console("No contact was selected");
+        console.log("No contact was selected");
         cb(null, "No contact was selected"); 
       } 
       
