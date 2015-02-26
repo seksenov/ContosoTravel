@@ -1,0 +1,136 @@
+.promptText {
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  font-size: 300%;
+}
+
+.largeButton {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 175px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 3em;
+
+}
+
+.centeredText {
+  position: absolute;
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contentContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  font-weight: 600;
+}
+
+/* TYPOGRAPHY
+--------------------------------------------- */
+
+body {
+  font-weight: 200;
+	font-size: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #2b2b2b;
+	color: #fff;
+	line-height: 1.5;
+}
+
+label, .label {
+  display: block;
+  margin-bottom: 0.25em;
+}
+input, .value {
+  display: block;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 0.75rem 0.5rem;
+  max-width: 600px;
+  -webkit-appearance: none;
+  background: #fff;
+  background: rgba(255,255,255,0.8);
+  color: #414141;
+  line-height: 1.25;
+}
+.valueClickable {
+  cursor: pointer;  
+}
+
+/* Very Short Browsers */
+@media only screen and (max-height: 26em) {
+  body {
+    font-size: 75%;
+  } 
+}
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) and (min-height: 37.5em) {
+  body {
+    font-size: 125%;
+  } 
+}
+
+/* LAYOUT
+--------------------------------------------- */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	width: 100%;
+	max-width: 1400px;
+}
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) {
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+		width: 90%;
+	}
+}
+
+/* BUTTONS
+--------------------------------------------- */
+.buttonAction {
+  display: inline-block;
+  border: 0 none;
+  border-radius: 6px;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: #fff;
+  color: #008272;
+  cursor: pointer;
+}
+.buttonAction:hover {
+  color: #00a490;
+}

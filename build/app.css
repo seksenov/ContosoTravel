@@ -1,122 +1,1134 @@
-@media only screen and (min-device-width:320px) and (max-device-width:480px){@-ms-viewport{width:1024px}}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
-audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
-audio:not([controls]){display:none;height:0}
-[hidden],template{display:none}
-a{background-color:transparent}
-a:active,a:hover{outline:0}
-abbr[title]{border-bottom:1px dotted}
-b,strong{font-weight:700}
-dfn{font-style:italic}
-h1{font-size:2em;margin:.67em 0}
-mark{background:#ff0;color:#000}
-small{font-size:80%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{top:-.5em}
-sub{bottom:-.25em}
-img{border:0}
-svg:not(:root){overflow:hidden}
-figure{margin:1em 40px}
-hr{box-sizing:content-box;height:0}
-pre{overflow:auto}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
-button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
-button{overflow:visible}
-button,select{text-transform:none}
-button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
-button[disabled],html input[disabled]{cursor:default}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-input{line-height:normal}
-input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
-input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
-input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}
-input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
-fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
-legend{border:0;padding:0}
-textarea{overflow:auto}
-optgroup{font-weight:700}
-table{border-collapse:collapse;border-spacing:0}
-td,th{padding:0}
-body,html{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:transparent}
-#superContainer{height:100%;position:relative;-ms-touch-action:none;touch-action:none}
-.fp-section{position:relative;box-sizing:border-box}
-.fp-slide{float:left}
-.fp-slide,.fp-slidesContainer{height:100%;display:block}
-.fp-slides{z-index:1;height:100%;overflow:hidden;position:relative;transition:all .3s ease-out}
-.fp-section.fp-table,.fp-slide.fp-table{display:table;table-layout:fixed;width:100%}
-.fp-tableCell{display:table-cell;width:100%;height:100%}
-.fp-slidesContainer{float:left;position:relative}
-.fp-controlArrow{position:absolute;z-index:4;top:50%;cursor:pointer;width:0;height:0;border-style:solid;margin-top:-38px;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.fp-controlArrow.fp-prev{left:15px;width:0;border-width:38.5px 34px 38.5px 0;border-color:transparent #fff transparent transparent}
-.fp-controlArrow.fp-next{right:15px;border-width:38.5px 0 38.5px 34px;border-color:transparent transparent transparent #fff}
-.fp-scrollable{overflow:scroll}
-.fp-notransition{transition:none!important}
-#fp-nav{position:fixed;z-index:100;margin-top:-32px;top:50%;opacity:1;-webkit-transform:translate3d(0,0,0)}
-#fp-nav.right{right:17px}
-#fp-nav.left{left:17px}
-.fp-slidesNav{position:absolute;z-index:4;left:50%;opacity:1}
-.fp-slidesNav.bottom{bottom:17px}
-.fp-slidesNav.top{top:17px}
-#fp-nav ul,.fp-slidesNav ul{margin:0;padding:0}
-#fp-nav ul li,.fp-slidesNav ul li{display:block;width:14px;height:13px;margin:7px;position:relative}
-.fp-slidesNav ul li{display:inline-block}
-#fp-nav ul li a,.fp-slidesNav ul li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer;text-decoration:none}
-#fp-nav ul li a.active span,.fp-slidesNav ul li a.active span{background:#fff}
-#fp-nav ul li a span,.fp-slidesNav ul li a span{top:2px;left:2px;width:8px;height:8px;border:1px solid #fff;background:0 0;border-radius:50%;position:absolute;z-index:1}
-#fp-nav ul li .fp-tooltip{position:absolute;top:-2px;color:#fff;font-size:14px;font-family:arial,helvetica,sans-serif;white-space:nowrap;max-width:220px;overflow:hidden;display:block;opacity:0;width:0}
-#fp-nav ul li:hover .fp-tooltip{transition:opacity .2s ease-in;width:auto;opacity:1}
-#fp-nav ul li .fp-tooltip.right{right:20px}
-#fp-nav ul li .fp-tooltip.left{left:20px}
-#destContainer{position:absolute;height:100%;width:100%;padding:0;margin:0}
-#destContainer:after{content:'';margin-top:100%;margin-bottom:100%}
-#locationPrompt{position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;background-color:#000;color:#fff;font-size:60px;text-align:center;vertical-align:middle;width:750px;height:75px}
-.title{font-size:300%;color:#fff;text-align:center;top:calc(50% - 25px);background-color:#000;position:relative;width:250px;left:0;right:0;margin:auto}
-.dest{width:50%;height:50%;float:left}
-body{background:#f7f6f3;font-family:sans-serif}
-.dateText{margin:10%;font-weight:100;font-size:275%}
-.dateClickable{text-decoration:underline;font-weight:300}
-#textDateContainer{position:absolute;top:0;bottom:0;left:0;right:0;width:70%;height:80%;margin:auto;font-weight:600;color:#fff}
-.calendar{position:absolute;width:280px;left:50%;top:50%;margin:-145px 0 0 -140px;background:#fff;border-radius:4px;overflow:hidden;-webkit-transform:scale(3);transform:scale(3)}
-@media (max-height:1080px){.calendar{-webkit-transform:scale(2);transform:scale(2)}}
-.ui-datepicker-header{height:50px;line-height:50px;color:#b0aead;background:#e9e5e3;margin-bottom:10px}
-.ui-datepicker-next,.ui-datepicker-prev{width:20px;height:20px;text-indent:9999px;border:2px solid #b0aead;border-radius:100%;cursor:pointer;overflow:hidden;margin-top:12px}
-.ui-datepicker-prev{float:left;margin-left:12px}
-.ui-datepicker-prev:after{-webkit-transform:rotate(45deg);transform:rotate(45deg);margin:-43px 0 0 8px}
-.ui-datepicker-next{float:right;margin-right:12px}
-.ui-datepicker-next:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);margin:-43px 0 0 6px}
-.ui-datepicker-next:after,.ui-datepicker-prev:after{content:'';position:absolute;display:block;width:4px;height:4px;border-left:2px solid #b0aead;border-bottom:2px solid #b0aead}
-.ui-datepicker-next:hover,.ui-datepicker-next:hover:after,.ui-datepicker-prev:hover,.ui-datepicker-prev:hover:after{border-color:#5ed1cc}
-.ui-datepicker-title{text-align:center}
-.ui-datepicker-calendar{width:100%;text-align:center}
-.ui-datepicker-calendar thead tr th span{display:block;width:40px;color:#00a8b2;margin-bottom:5px;font-size:13px}
-.ui-state-default{display:block;text-decoration:none;color:#737373;line-height:45px;font-size:20px}
-.ui-state-default:hover{background:rgba(0,0,0,.02)}
-.ui-state-highlight{color:#8dd391}
-.ui-state-active{color:#5ed1cc}
-.ui-datepicker-unselectable .ui-state-default{color:#eee}
-.Barcelona{background:url(./images/BarcelonaMain.jpg) center center no-repeat;background-size:cover}
-.Seattle{background:url(./images/SeattleMain.jpg) center center no-repeat;background-size:cover}
-.London{background:url(./images/LondonMain.jpg) center center no-repeat;background-size:cover}
-.Paris{background:url(./images/ParisMain.jpg) center center no-repeat;background-size:cover}
-.BarcelonaSecond{background:url(./images/BarcelonaSecond.jpg) center center no-repeat;background-size:cover}
-.BarcelonaThird{background:url(./images/BarcelonaThird.jpg) center center no-repeat;background-size:cover}
-.LondonSecond{background:url(./images/LondonSecond.jpg) center center no-repeat;background-size:cover}
-.ParisSecond{background:url(./images/ParisSecond.jpg) center center no-repeat;background-size:cover}
-.SeattleSecond{background:url(./images/SeattleSecond.jpg) center center no-repeat;background-size:cover}
-.Airplane{background:url(./images/Airplane.jpg) center center no-repeat;background-size:cover}
-.Friends{background:url(./images/Friends.jpg) center center no-repeat;background-size:cover}
-.Calendar{background:url(./images/Calendar.jpg) center center no-repeat;background-size:cover}
-#contactName{font-size:300%;font-weight:100;color:#fff;margin:10%}
-.button-animate{transition:all .1s}
-.action-button{position:relative;padding:10px 40px;margin:0 10px 10px 0;float:left;border-radius:10px;border-color:#3498DB;font-family:'Segoe UI';font-size:25px;color:#FFF;text-decoration:none}
-.action-button:active{-webkit-transform:translate(0,5px);transform:translate(0,5px);border-bottom:1px solid #3498DB}
-.blue{background-color:#3498DB;border-bottom:5px solid #2980B9;text-shadow:0 -2px #2980B9}
-.background{width:100%;height:100%;position:absolute;z-index:-10}
-.promptText{margin:auto;background-color:#000;color:#fff;padding:10px;width:80%;text-align:center;font-size:300%}
-.confirmButton{position:absolute!important;bottom:0;right:0}
-.largeButton{position:absolute;text-align:center;margin:auto;width:500px;height:175px;top:0;left:0;right:0;bottom:0;font-size:3em}
-.centeredText{position:absolute;color:#fff;font-size:300%;text-align:center;margin:auto;width:500px;height:250px;top:0;left:0;right:0;bottom:0}
-.largeText{font-size:300%;font-weight:100;color:#fff;margin:10%}
-.contentContainer{position:absolute;top:0;bottom:0;left:0;right:0;width:70%;height:80%;margin:auto;font-weight:600}
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 1, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.promptText {
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  font-size: 300%; }
+
+/* line 11, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.largeButton {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 175px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 3em; }
+
+/* line 25, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.centeredText {
+  position: absolute;
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+/* line 39, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.contentContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  font-weight: 600; }
+
+/* TYPOGRAPHY
+--------------------------------------------- */
+/* line 54, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+body {
+  font-weight: 200;
+  font-size: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #2b2b2b;
+  color: #fff;
+  line-height: 1.5; }
+
+/* line 63, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+label, .label {
+  display: block;
+  margin-bottom: 0.25em; }
+
+/* line 67, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+input, .value {
+  display: block;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 0.75rem 0.5rem;
+  max-width: 600px;
+  -webkit-appearance: none;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  color: #414141;
+  line-height: 1.25; }
+
+/* line 78, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.valueClickable {
+  cursor: pointer; }
+
+/* Very Short Browsers */
+@media only screen and (max-height: 26em) {
+  /* line 84, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+  body {
+    font-size: 75%; } }
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) and (min-height: 37.5em) {
+  /* line 91, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+  body {
+    font-size: 125%; } }
+
+/* LAYOUT
+--------------------------------------------- */
+/* line 99, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/* line 104, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 1400px; }
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) {
+  /* line 113, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 90%; } }
+
+/* BUTTONS
+--------------------------------------------- */
+/* line 122, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.buttonAction {
+  display: inline-block;
+  border: 0 none;
+  border-radius: 6px;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: #fff;
+  color: #008272;
+  cursor: pointer; }
+
+/* line 134, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_universal.scss */
+.buttonAction:hover {
+  color: #00a490; }
+
+/**
+ * fullPage 2.5.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+/* line 8, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 16, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none; }
+
+/* line 26, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-section {
+  position: relative;
+  /* Safari<=5 Android<=3 */
+  /* <=28 */
+  box-sizing: border-box; }
+
+/* line 32, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slide {
+  float: left; }
+
+/* line 35, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block; }
+
+/* line 39, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out; }
+
+/* line 47, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 52, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-tableCell {
+  display: table-cell;
+  width: 100%;
+  height: 100%; }
+
+/* line 58, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slidesContainer {
+  float: left;
+  position: relative; }
+
+/* line 62, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-controlArrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 75, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent; }
+
+/* line 81, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff; }
+
+/* line 86, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-scrollable {
+  overflow: scroll; }
+
+/* line 90, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-notransition {
+  transition: none !important; }
+
+/* line 94, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+/* line 102, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav.right {
+  right: 0.5rem; }
+
+/* line 105, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav.left {
+  left: 0.5rem; }
+
+/* line 108, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1; }
+
+/* line 114, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slidesNav.bottom {
+  bottom: 17px; }
+
+/* line 117, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slidesNav.top {
+  top: 17px; }
+
+/* line 121, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul, .fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 126, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li, .fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px 0;
+  position: relative; }
+
+/* line 133, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+.fp-slidesNav ul li {
+  display: inline-block; }
+
+/* line 137, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li a, .fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none; }
+
+/* line 147, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+  background: white; }
+
+/* line 151, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1; }
+
+/* line 163, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0; }
+
+/* line 176, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li:hover .fp-tooltip {
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1; }
+
+/* line 182, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px; }
+
+/* line 185, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_fullPage.scss */
+#fp-nav ul li .fp-tooltip.left {
+  left: 20px; }
+
+/* PANES
+--------------------------------------------- */
+/* line 4, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneContainer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+
+/* Background */
+/* line 10, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10; }
+
+/* Pane Header */
+/* line 20, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.stepLabel {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.75em 0.75em 0.5em;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-size: 0.75em;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.1); }
+
+/* line 31, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneTitle {
+  margin: 0 1rem 1.25rem 0;
+  font-weight: 200;
+  font-size: 2.5em;
+  line-height: 1.125; }
+
+/* Pane Content */
+/* line 39, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneContent {
+  margin-right: 1rem;
+  font-size: 1.125em; }
+
+/* line 44, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneContent .buttonAction, .paneContent p {
+  margin-bottom: 1.5rem; }
+
+/* line 47, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneContent .largeText {
+  display: block;
+  font-size: 1.325em; }
+
+/* Button Bar */
+/* line 53, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneButtons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.75em 0;
+  width: 100%;
+  text-align: right;
+  background: #fff;
+  font-size: 1.125em; }
+
+/* line 63, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneButtons .container {
+  padding: 0 0.75em; }
+
+/* line 66, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneButtons .buttonConfirm {
+  background: #008272;
+  color: #fff; }
+
+/* line 70, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+.paneButtons .buttonConfirm:hover {
+  background: #00a490; }
+
+/* PANES - RESPONSIVE
+--------------------------------------------- */
+/* Very Short Browsers */
+@media only screen and (max-height: 26em) {
+  /* line 82, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+  .paneTitle, .paneContent .buttonAction, .paneContent p {
+    margin-bottom: 1rem; }
+  /* line 85, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+  .stepLabel {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 0.75em;
+    background: transparent; }
+  /* line 91, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+  .paneTitle {
+    font-size: 1.75em; } }
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) {
+  /* line 100, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+  .paneButtons .container {
+    padding-right: 0;
+    padding-left: 0; } }
+
+@media only screen and (min-width: 50em) and (min-height: 37.5em) {
+  /* line 110, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+  .paneTitle, .paneContent .buttonAction, .paneContent p {
+    margin-bottom: 3rem; }
+  /* line 113, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_panes.scss */
+  .stepLabel {
+    font-size: 0.75em; } }
+
+/* line 1, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+#destContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 11em);
+  width: 100%; }
+
+/* line 8, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.dest {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  text-align: center; }
+
+/* line 14, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.destTitle:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(2, 52, 97, 0.5);
+  content: ''; }
+
+/* line 23, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.destTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+/* line 31, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.destTitle:hover {
+  cursor: pointer; }
+
+/* line 34, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.destTitle .buttonAction {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.75em;
+  padding: 0;
+  left: 0;
+  width: 100%; }
+
+/* line 42, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.destTitle .buttonAction {
+  margin-top: -0.75em;
+  font-size: 1.5em;
+  background: transparent;
+  color: #fff; }
+
+/* line 49, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.Barcelona {
+  top: 0;
+  left: 0; }
+
+/* line 53, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.Paris {
+  top: 0;
+  left: 50%; }
+
+/* line 57, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.London {
+  top: 50%;
+  left: 0; }
+
+/* line 61, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.Seattle {
+  top: 50%;
+  left: 50%; }
+
+/* line 67, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+.Paris .destTitle:before, .London .destTitle:before {
+  background: rgba(3, 94, 96, 0.5); }
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) {
+  /* line 74, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  .dest {
+    height: 100%;
+    width: 25%; }
+  /* line 78, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  .Paris {
+    left: 25%; }
+  /* line 81, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  .London {
+    top: 0;
+    left: 50%; }
+  /* line 85, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  .Seattle {
+    top: 0;
+    left: 75%;
+    background: rgba(3, 94, 96, 0.5); }
+  /* line 90, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  .London .destTitle:before {
+    background: rgba(2, 52, 97, 0.5); }
+  /* line 93, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_locationsel.scss */
+  .Seattle .destTitle:before {
+    background: rgba(3, 94, 96, 0.5); } }
+
+/* DATE VALUES
+--------------------------------------------- */
+/* line 4, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.dateClickable {
+  position: relative;
+  padding-right: 50px; }
+
+/* line 8, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.buttonDatePicker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 41px;
+  background: #fff; }
+
+/* line 16, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.datePickerIcon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -13px;
+  right: 8px;
+  height: 26px;
+  width: 25px; }
+
+/* line 25, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.dateClickable:hover .datePickerIcon {
+  opacity: 0.75; }
+
+/* DATE SELECTOR
+--------------------------------------------- */
+/* line 32, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.calendar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+/* line 39, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.calendar:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  content: ''; }
+
+/* line 49, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker {
+  position: absolute;
+  width: 280px;
+  left: 50%;
+  top: 50%;
+  margin: -155px 0px 0px -140px;
+  background: #fff;
+  color: #414141;
+  border-radius: 4px;
+  z-index: 300;
+  overflow: hidden; }
+
+/* line 62, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  background: #e9e5e3;
+  margin-bottom: 10px;
+  font-size: 20px; }
+
+/* line 70, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-prev, .ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border: 2px solid #b0aead;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 15px; }
+
+/* line 80, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px; }
+
+/* line 84, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-prev:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: -45px 0px 0px 6px; }
+
+/* line 88, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px; }
+
+/* line 92, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-next:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin: -45px 0px 0px 4px; }
+
+/* line 97, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-prev:after, .ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid #b0aead;
+  border-bottom: 2px solid #b0aead; }
+
+/* line 109, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover, .ui-datepicker-prev:hover:after, .ui-datepicker-next:hover:after {
+  border-color: #00a490; }
+
+/* line 112, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-title {
+  text-align: center; }
+
+/* line 115, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center; }
+
+/* line 119, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: #767676;
+  margin-bottom: 5px;
+  font-size: 13px; }
+
+/* line 126, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #008272;
+  line-height: 45px;
+  font-size: 20px; }
+
+/* line 133, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-state-default:hover {
+  background: #00a490;
+  color: #fff; }
+
+/* line 137, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-state-active {
+  background: rgba(0, 164, 144, 0.1); }
+
+/* line 140, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee; }
+
+/* DATE SELECTOR - RESPONSIVE
+--------------------------------------------- */
+@media only screen and (min-width: 50em) and (min-height: 37.5em) {
+  /* line 148, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_datesel.scss */
+  .ui-datepicker {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); } }
+
+/* line 6, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.Barcelona {
+  background: url('./images/BarcelonaMain.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 10, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.Seattle {
+  background: url('./images/SeattleMain.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 14, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.London {
+  background: url('./images/LondonMain.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 18, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.Paris {
+  background: url('./images/ParisMain.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 22, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.BarcelonaSecond {
+  background: url('./images/BarcelonaSecond.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 26, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.BarcelonaThird {
+  background: url('./images/BarcelonaThird.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 30, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.LondonSecond {
+  background: url('./images/LondonSecond.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 34, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.ParisSecond {
+  background: url('./images/ParisSecond.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 38, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.SeattleSecond {
+  background: url('./images/SeattleSecond.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 42, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.Airplane {
+  background: url('./images/Airplane.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 46, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.Friends {
+  background: url('./images/Friends.jpg') no-repeat center center;
+  background-size: cover; }
+
+/* line 50, C:/Users/alelu/Documents/Work/ContosoTravel/src/sass/_cities.scss */
+.Calendar {
+  background: url('./images/Calendar.jpg') no-repeat center center;
+  background-size: cover; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9jaXRpZXMuc2NzcyIsIl9kYXRlc2VsLnNjc3MiLCJfZnVsbFBhZ2Uuc2NzcyIsIl9sb2NhdGlvbnNlbC5zY3NzIiwiX25vcm1hbGl6ZS5zY3NzIiwiX3BhbmVzLnNjc3MiLCJfdW5pdmVyc2FsLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0UsQUFBc0IsQUFDdEIsQUFBaUIsQUFHbkIsQUFJQSxBQUlBLEFBSUEsQUFJQSxBQUlBLEFBSUEsQUFJQSxBQUlBLEFBSUEsQUFJQSxBQUlBLEFDOUNBLEFBQ0UsQUFBVSxBQUNWLEFBQWUsQUFFakIsQUFDRSxBQUFVLEFBQ1YsQUFBSyxBQUNMLEFBQU8sQUFDUCxBQUFRLEFBQ1IsQUFBTyxBQUNQLEFBQVksQUFFZCxBQUNFLEFBQVMsQUFDVCxBQUFVLEFBQ1YsQUFBSyxBQUNMLEFBQVksQUFDWixBQUFPLEFBQ1AsQUFBUSxBQUNSLEFBQU8sQUFFVCxBQUFjLEFBQU8sQUFDbkIsQUFBUyxBQU1YLEFBQ0UsQUFBVSxBQUNWLEFBQUssQUFDTCxBQUFNLEFBQ04sQUFBUSxBQUNSLEFBQU8sQUFFVCxBQUFTLEFBQ1AsQUFBVSxBQUNWLEFBQUssQUFDTCxBQUFNLEFBQ04sQUFBUSxBQUNSLEFBQU8sQUFDUCxBQUFZLEFBQ1osQUFBUyxBQUNULEFBQVMsQUFFWCxBQUNFLEFBQVUsQUFDVixBQUFPLEFBQ1AsQUFBTSxBQUNOLEFBQUssQUFDTCxBQUFRLEFBQ1IsQUFBWSxBQUNaLEFBQU8sQUFDUCxBQUFlLEFBQ2YsQUFBUyxBQUNULEFBQVUsQUFHWixBQUNFLEFBQVEsQUFDUixBQUFhLEFBQ2IsQUFBWSxBQUNaLEFBQWUsQUFDZixBQUFXLEFBRWIsQUFBcUIsQUFFbkIsQUFBTyxBQUNQLEFBQVEsQUFDUixBQUFhLEFBQ2IsQUFBUSxBQUNSLEFBQWUsQUFDZixBQUFRLEFBQ1IsQUFBVSxBQUNWLEFBQVksQUFFZCxBQUNFLEFBQU8sQUFDUCxBQUFhLEFBRWYsQUFBbUIsQUFDakIsQUFBVyxBQUNYLEFBQVEsQUFF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QUNFLEFBQVMsQUFDVCxBQUFRLEFBQ1IsQUFBZSxBQUNmLEFBQVMsQUFDVCxBQUFpQixBQUNqQixBQUFvQixBQUNwQixBQUFTLEFBQ1QsQUFBWSxBQUNaLEFBQU8sQUFDUCxBQUFRLEFBRVYsQUFBYSxBQUNYLEFBQU8iLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBtaXhpbiBmdWxsQmdJbWcoJGltYWdlKSB7XG4gIGJhY2tncm91bmQ6IHVybCgkaW1hZ2UpIG5vLXJlcGVhdCBjZW50ZXIgY2VudGVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4uQmFyY2Vsb25hIHtcbiAgQGluY2x1ZGUgZnVsbEJnSW1nKCcuL2ltYWdlcy9CYXJjZWxvbmFNYWluLmpwZycpO1xufVxuXG4uU2VhdHRsZSB7XG4gIEBpbmNsdWRlIGZ1bGxCZ0ltZygnLi9pbWFnZXMvU2VhdHRsZU1haW4uanBnJyk7XG59XG5cbi5Mb25kb24ge1xuICBAaW5jbHVkZSBmdWxsQmdJbWcoJy4vaW1hZ2VzL0xvbmRvbk1haW4uanBnJyk7XG59XG5cbi5QYXJpcyB7XG4gIEBpbmNsdWRlIGZ1bGxCZ0ltZygnLi9pbWFnZXMvUGFyaXNNYWluLmpwZycpO1xufVxuXG4uQmFyY2Vsb25hU2Vjb25kIHtcbiAgQGluY2x1ZGUgZnVsbEJnSW1nKCcuL2ltYWdlcy9CYXJjZWxvbmFTZWNvbmQuanBnJyk7XG59XG5cbi5CYXJjZWxvbmFUaGlyZCB7XG4gIEBpbmNsdWRlIGZ1bGxCZ0ltZygnLi9pbWFnZXMvQmFyY2Vsb25hVGhpcmQuanBnJyk7XG59XG5cbi5Mb25kb25TZWNvbmQge1xuICBAaW5jbHVkZSBmdWxsQmdJbWcoJy4vaW1hZ2VzL0xvbmRvblNlY29uZC5qcGcnKTtcbn1cblxuLlBhcmlzU2Vjb25kIHtcbiAgQGluY2x1ZGUgZnVsbEJnSW1nKCcuL2ltYWdlcy9QYXJpc1NlY29uZC5qcGcnKTtcbn1cblxuLlNlYXR0bGVTZWNvbmQge1xuICBAaW5jbHVkZSBmdWxsQmdJbWcoJy4vaW1hZ2VzL1NlYXR0bGVTZWNvbmQuanBnJyk7XG59XG5cbi5BaXJwbGFuZSB7XG4gIEBpbmNsdWRlIGZ1bGxCZ0ltZygnLi9pbWFnZXMvQWlycGxhbmUuanBnJyk7XG59XG5cbi5GcmllbmRzIHtcbiAgQGluY2x1ZGUgZnVsbEJnSW1nKCcuL2ltYWdlcy9GcmllbmRzLmpwZycpO1xufVxuXG4uQ2FsZW5kYXIge1xuICBAaW5jbHVkZSBmdWxsQmdJbWcoJy4vaW1hZ2VzL0NhbGVuZGFyLmpwZycpO1xufVxuIiwiLyogREFURSBWQUxVRVNcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xuXG4uZGF0ZUNsaWNrYWJsZSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1yaWdodDogNTBweDtcbn1cbi5idXR0b25EYXRlUGlja2VyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHJpZ2h0OiAwO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiA0MXB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuLmRhdGVQaWNrZXJJY29uIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIG1hcmdpbi10b3A6IC0xM3B4O1xuICByaWdodDogOHB4O1xuICBoZWlnaHQ6IDI2cHg7XG4gIHdpZHRoOiAyNXB4O1xufVxuLmRhdGVDbGlja2FibGU6aG92ZXIgLmRhdGVQaWNrZXJJY29uIHtcbiAgb3BhY2l0eTogMC43NTtcbn1cblxuLyogREFURSBTRUxFQ1RPUlxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG5cbi5jYWxlbmRhciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmNhbGVuZGFyOmJlZm9yZSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsMCwwLDAuNSk7XG4gIHotaW5kZXg6IDIwMDtcbiAgY29udGVudDogJyc7XG59XG4udWktZGF0ZXBpY2tlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDI4MHB4O1xuICBsZWZ0OiA1MCU7XG4gIHRvcDogNTAlO1xuICBtYXJnaW46IC0xNTVweCAwcHggMHB4IC0xNDBweDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbiAgY29sb3I6ICM0MTQxNDE7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgei1pbmRleDogMzAwO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4udWktZGF0ZXBpY2tlci1oZWFkZXIge1xuICBoZWlnaHQ6IDUwcHg7XG4gIGxpbmUtaGVpZ2h0OiA1MHB4O1xuICBiYWNrZ3JvdW5kOiAjZTllNWUzO1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICBmb250LXNpemU6IDIwcHg7XG59XG4udWktZGF0ZXBpY2tlci1wcmV2LFxuLnVpLWRhdGVwaWNrZXItbmV4dCB7XG4gIHdpZHRoOiAyMHB4O1xuICBoZWlnaHQ6IDIwcHg7XG4gIHRleHQtaW5kZW50OiA5OTk5cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkICNiMGFlYWQ7XG4gIGJvcmRlci1yYWRpdXM6IDEwMCU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgbWFyZ2luLXRvcDogMTVweDtcbn1cbi51aS1kYXRlcGlja2VyLXByZXYge1xuICBmbG9hdDogbGVmdDtcbiAgbWFyZ2luLWxlZnQ6IDEycHg7XG59XG4udWktZGF0ZXBpY2tlci1wcmV2OmFmdGVyIHtcbiAgdHJhbnNmb3JtOiByb3RhdGUoNDVkZWcpO1xuICBtYXJnaW46IC00NXB4IDBweCAwcHggNnB4O1xufVxuLnVpLWRhdGVwaWNrZXItbmV4dCB7XG4gIGZsb2F0OiByaWdodDtcbiAgbWFyZ2luLXJpZ2h0OiAxMnB4O1xufVxuLnVpLWRhdGVwaWNrZXItbmV4dDphZnRlciB7XG4gIHRyYW5zZm9ybTogcm90YXRlKC0xMzVkZWcpO1xuICBtYXJnaW46IC00NXB4IDBweCAwcHggNHB4O1xufVxuLnVpLWRhdGVwaWNrZXItcHJldjphZnRlcixcbi51aS1kYXRlcGlja2VyLW5leHQ6YWZ0ZXIge1xuICBjb250ZW50OiAnJztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDZweDtcbiAgaGVpZ2h0OiA2cHg7XG4gIGJvcmRlci1sZWZ0OiAycHggc29saWQgI2IwYWVhZDtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICNiMGFlYWQ7XG59XG4udWktZGF0ZXBpY2tlci1wcmV2OmhvdmVyLFxuLnVpLWRhdGVwaWNrZXItbmV4dDpob3Zlcixcbi51aS1kYXRlcGlja2VyLXByZXY6aG92ZXI6YWZ0ZXIsXG4udWktZGF0ZXBpY2tlci1uZXh0OmhvdmVyOmFmdGVyIHtcbiAgYm9yZGVyLWNvbG9yOiAjMDBhNDkwO1xufVxuLnVpLWRhdGVwaWNrZXItdGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4udWktZGF0ZXBpY2tlci1jYWxlbmRhciB7XG4gIHdpZHRoOiAxMDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4udWktZGF0ZXBpY2tlci1jYWxlbmRhciB0aGVhZCB0ciB0aCBzcGFuIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiA0MHB4O1xuICBjb2xvcjogIzc2NzY3NjtcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICBmb250LXNpemU6IDEzcHg7XG59XG4udWktc3RhdGUtZGVmYXVsdCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiAjMDA4MjcyO1xuICBsaW5lLWhlaWdodDogNDVweDtcbiAgZm9udC1zaXplOiAyMHB4O1xufVxuLnVpLXN0YXRlLWRlZmF1bHQ6aG92ZXIge1xuICBiYWNrZ3JvdW5kOiAjMDBhNDkwO1xuICBjb2xvcjogI2ZmZjtcbn1cbi51aS1zdGF0ZS1hY3RpdmUge1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDE2NCwgMTQ0LCAwLjEpO1xufVxuLnVpLWRhdGVwaWNrZXItdW5zZWxlY3RhYmxlIC51aS1zdGF0ZS1kZWZhdWx0IHtcbiAgY29sb3I6ICNlZWU7XG4gIC8vYm9yZGVyOiAycHggc29saWQgdHJhbnNwYXJlbnQ7XG59XG5cbi8qIERBVEUgU0VMRUNUT1IgLSBSRVNQT05TSVZFXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNTBlbSkgYW5kIChtaW4taGVpZ2h0OiAzNy41ZW0pIHtcbiAgLnVpLWRhdGVwaWNrZXIge1xuICAgIHRyYW5zZm9ybTogc2NhbGUoMS41KTtcbiAgfVxufSIsIi8qKlxyXG4gKiBmdWxsUGFnZSAyLjUuN1xyXG4gKiBodHRwczovL2dpdGh1Yi5jb20vYWx2YXJvdHJpZ28vZnVsbFBhZ2UuanNcclxuICogTUlUIGxpY2Vuc2VkXHJcbiAqXHJcbiAqIENvcHlyaWdodCAoQykgMjAxMyBhbHZhcm90cmlnby5jb20gLSBBIHByb2plY3QgYnkgQWx2YXJvIFRyaWdvXHJcbiAqL1xyXG5odG1sLCBib2R5IHtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxuICBvdmVyZmxvdzpoaWRkZW47XHJcblxyXG4gIC8qQXZvaWQgZmxpY2tlciBvbiBzbGlkZXMgdHJhbnNpdGlvbnMgZm9yIG1vYmlsZSBwaG9uZXMgIzMzNiAqL1xyXG4gIC13ZWJraXQtdGFwLWhpZ2hsaWdodC1jb2xvcjogcmdiYSgwLDAsMCwwKTtcclxufVxyXG4jc3VwZXJDb250YWluZXIge1xyXG4gIGhlaWdodDogMTAwJTtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcblxyXG4gIC8qIFRvdWNoIGRldGVjdGlvbiBmb3IgV2luZG93cyA4ICovXHJcbiAgLW1zLXRvdWNoLWFjdGlvbjogbm9uZTtcclxuXHJcbiAgLyogSUUgMTEgb24gV2luZG93cyBQaG9uZSA4LjEqL1xyXG4gIHRvdWNoLWFjdGlvbjogbm9uZTtcclxufVxyXG4uZnAtc2VjdGlvbiB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIC13ZWJraXQtYm94LXNpemluZzogYm9yZGVyLWJveDsgLyogU2FmYXJpPD01IEFuZHJvaWQ8PTMgKi9cclxuICAtbW96LWJveC1zaXppbmc6IGJvcmRlci1ib3g7IC8qIDw9MjggKi9cclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG59XHJcbi5mcC1zbGlkZSB7XHJcbiAgZmxvYXQ6IGxlZnQ7XHJcbn1cclxuLmZwLXNsaWRlLCAuZnAtc2xpZGVzQ29udGFpbmVyIHtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbn1cclxuLmZwLXNsaWRlcyB7XHJcbiAgei1pbmRleDoxO1xyXG4gIGhlaWdodDogMTAwJTtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2Utb3V0OyAvKiBTYWZhcmk8PTYgQW5kcm9pZDw9NC4zICovXHJcbiAgdHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZS1vdXQ7XHJcbn1cclxuLmZwLXNlY3Rpb24uZnAtdGFibGUsIC5mcC1zbGlkZS5mcC10YWJsZSB7XHJcbiAgZGlzcGxheTogdGFibGU7XHJcbiAgdGFibGUtbGF5b3V0OmZpeGVkO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5mcC10YWJsZUNlbGwge1xyXG4gIGRpc3BsYXk6IHRhYmxlLWNlbGw7XHJcbiAgLy92ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4uZnAtc2xpZGVzQ29udGFpbmVyIHtcclxuICBmbG9hdDogbGVmdDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuLmZwLWNvbnRyb2xBcnJvdyB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHotaW5kZXg6IDQ7XHJcbiAgdG9wOiA1MCU7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIHdpZHRoOiAwO1xyXG4gIGhlaWdodDogMDtcclxuICBib3JkZXItc3R5bGU6IHNvbGlkO1xyXG4gIG1hcmdpbi10b3A6IC0zOHB4O1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLDAsMCk7XHJcbiAgLW1zLXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwwLDApO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwwLDApO1xyXG59XHJcbi5mcC1jb250cm9sQXJyb3cuZnAtcHJldiB7XHJcbiAgbGVmdDogMTVweDtcclxuICB3aWR0aDogMDtcclxuICBib3JkZXItd2lkdGg6IDM4LjVweCAzNHB4IDM4LjVweCAwO1xyXG4gIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQgI2ZmZiB0cmFuc3BhcmVudCB0cmFuc3BhcmVudDtcclxufVxyXG4uZnAtY29udHJvbEFycm93LmZwLW5leHQge1xyXG4gIHJpZ2h0OiAxNXB4O1xyXG4gIGJvcmRlci13aWR0aDogMzguNXB4IDAgMzguNXB4IDM0cHg7XHJcbiAgYm9yZGVyLWNvbG9yOiB0cmFuc3BhcmVudCB0cmFuc3BhcmVudCB0cmFuc3BhcmVudCAjZmZmO1xyXG59XHJcbi5mcC1zY3JvbGxhYmxlIHtcclxuICBvdmVyZmxvdzogc2Nyb2xsO1xyXG5cclxufVxyXG4uZnAtbm90cmFuc2l0aW9uIHtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IG5vbmUgIWltcG9ydGFudDtcclxuICB0cmFuc2l0aW9uOiBub25lICFpbXBvcnRhbnQ7XHJcbn1cclxuI2ZwLW5hdiB7XHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHotaW5kZXg6IDEwMDtcclxuICBtYXJnaW4tdG9wOiAtMzJweDtcclxuICB0b3A6IDUwJTtcclxuICBvcGFjaXR5OiAxO1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLDAsMCk7XHJcbn1cclxuI2ZwLW5hdi5yaWdodCB7XHJcbiAgcmlnaHQ6IDAuNXJlbTtcclxufVxyXG4jZnAtbmF2LmxlZnQge1xyXG4gIGxlZnQ6IDAuNXJlbTtcclxufVxyXG4uZnAtc2xpZGVzTmF2e1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB6LWluZGV4OiA0O1xyXG4gIGxlZnQ6IDUwJTtcclxuICBvcGFjaXR5OiAxO1xyXG59XHJcbi5mcC1zbGlkZXNOYXYuYm90dG9tIHtcclxuICBib3R0b206IDE3cHg7XHJcbn1cclxuLmZwLXNsaWRlc05hdi50b3Age1xyXG4gIHRvcDogMTdweDtcclxufVxyXG4jZnAtbmF2IHVsLFxyXG4uZnAtc2xpZGVzTmF2IHVsIHtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxufVxyXG4jZnAtbmF2IHVsIGxpLFxyXG4uZnAtc2xpZGVzTmF2IHVsIGxpIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICB3aWR0aDogMTRweDtcclxuICBoZWlnaHQ6IDEzcHg7XHJcbiAgbWFyZ2luOiA3cHggMDtcclxuICBwb3NpdGlvbjpyZWxhdGl2ZTtcclxufVxyXG4uZnAtc2xpZGVzTmF2IHVsIGxpIHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbn1cclxuI2ZwLW5hdiB1bCBsaSBhLFxyXG4uZnAtc2xpZGVzTmF2IHVsIGxpIGEge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB6LWluZGV4OiAxO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG59XHJcbiNmcC1uYXYgdWwgbGkgYS5hY3RpdmUgc3BhbixcclxuLmZwLXNsaWRlc05hdiB1bCBsaSBhLmFjdGl2ZSBzcGFuIHtcclxuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcclxufVxyXG4jZnAtbmF2IHVsIGxpIGEgc3BhbixcclxuLmZwLXNsaWRlc05hdiB1bCBsaSBhIHNwYW4ge1xyXG4gIHRvcDogMnB4O1xyXG4gIGxlZnQ6IDJweDtcclxuICB3aWR0aDogOHB4O1xyXG4gIGhlaWdodDogOHB4O1xyXG4gIC8vYm9yZGVyOiAxcHggc29saWQgIzAwMDtcclxuICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcclxuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDApO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgei1pbmRleDogMTtcclxufVxyXG4jZnAtbmF2IHVsIGxpIC5mcC10b29sdGlwIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAtMnB4O1xyXG4gIGNvbG9yOiAjZmZmO1xyXG4gIGZvbnQtc2l6ZTogMTRweDtcclxuICBmb250LWZhbWlseTogYXJpYWwsIGhlbHZldGljYSwgc2Fucy1zZXJpZjtcclxuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xyXG4gIG1heC13aWR0aDogMjIwcHg7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBvcGFjaXR5OiAwO1xyXG4gIHdpZHRoOiAwO1xyXG59XHJcbiNmcC1uYXYgdWwgbGk6aG92ZXIgLmZwLXRvb2x0aXAge1xyXG4gIC13ZWJraXQtdHJhbnNpdGlvbjogb3BhY2l0eSAwLjJzIGVhc2UtaW47XHJcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjJzIGVhc2UtaW47XHJcbiAgd2lkdGg6IGF1dG87XHJcbiAgb3BhY2l0eTogMTtcclxufVxyXG4jZnAtbmF2IHVsIGxpIC5mcC10b29sdGlwLnJpZ2h0IHtcclxuICByaWdodDogMjBweDtcclxufVxyXG4jZnAtbmF2IHVsIGxpIC5mcC10b29sdGlwLmxlZnQge1xyXG4gIGxlZnQ6IDIwcHg7XHJcbn1cclxuIiwiI2Rlc3RDb250YWluZXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiBjYWxjKDEwMCUgLSAxMWVtKTtcbiAgd2lkdGg6IDEwMCU7XG59XG4uZGVzdCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgaGVpZ2h0OiA1MCU7XG4gIHdpZHRoOiA1MCU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5kZXN0VGl0bGU6YmVmb3JlIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIGhlaWdodDogMTAwJTtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQ6IHJnYmEoMiw1Miw5NywwLjUpO1xuICBjb250ZW50OiAnJztcbn1cbi5kZXN0VGl0bGUge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmRlc3RUaXRsZTpob3ZlciB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5kZXN0VGl0bGUgLmJ1dHRvbkFjdGlvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIG1hcmdpbi10b3A6IC0wLjc1ZW07XG4gIHBhZGRpbmc6IDA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmRlc3RUaXRsZSAuYnV0dG9uQWN0aW9uIHtcbiAgbWFyZ2luLXRvcDogLTAuNzVlbTtcbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gIGNvbG9yOiAjZmZmO1xufVxuXG4uQmFyY2Vsb25hIHtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xufVxuLlBhcmlzIHtcbiAgdG9wOiAwO1xuICBsZWZ0OiA1MCU7XG59XG4uTG9uZG9uIHtcbiAgdG9wOiA1MCU7XG4gIGxlZnQ6IDA7XG59XG4uU2VhdHRsZSB7XG4gIHRvcDogNTAlO1xuICBsZWZ0OiA1MCU7XG59XG5cbi5QYXJpcyAuZGVzdFRpdGxlOmJlZm9yZSxcbi5Mb25kb24gLmRlc3RUaXRsZTpiZWZvcmUge1xuICBiYWNrZ3JvdW5kOiByZ2JhKDMsOTQsOTYsMC41KTtcbn1cblxuLyogVGFibGV0KyAqL1xuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA1MGVtKSB7XG4gIFxuICAuZGVzdCB7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHdpZHRoOiAyNSU7ICBcbiAgfVxuICAuUGFyaXMge1xuICAgIGxlZnQ6IDI1JTtcbiAgfVxuICAuTG9uZG9uIHtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogNTAlO1xuICB9XG4gIC5TZWF0dGxlIHtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogNzUlO1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMyw5NCw5NiwwLjUpO1xuICB9XG4gIC5Mb25kb24gLmRlc3RUaXRsZTpiZWZvcmUge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMiw1Miw5NywwLjUpO1xuICB9XG4gIC5TZWF0dGxlIC5kZXN0VGl0bGU6YmVmb3JlIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDMsOTQsOTYsMC41KTtcbiAgfVxuICBcbn0iLCIvKiEgbm9ybWFsaXplLmNzcyB2My4wLjIgfCBNSVQgTGljZW5zZSB8IGdpdC5pby9ub3JtYWxpemUgKi9cblxuLyoqXG4gKiAxLiBTZXQgZGVmYXVsdCBmb250IGZhbWlseSB0byBzYW5zLXNlcmlmLlxuICogMi4gUHJldmVudCBpT1MgdGV4dCBzaXplIGFkanVzdCBhZnRlciBvcmllbnRhdGlvbiBjaGFuZ2UsIHdpdGhvdXQgZGlzYWJsaW5nXG4gKiAgICB1c2VyIHpvb20uXG4gKi9cblxuaHRtbCB7XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyAvKiAxICovXG4gIC1tcy10ZXh0LXNpemUtYWRqdXN0OiAxMDAlOyAvKiAyICovXG4gIC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJTsgLyogMiAqL1xufVxuXG4vKipcbiAqIFJlbW92ZSBkZWZhdWx0IG1hcmdpbi5cbiAqL1xuXG5ib2R5IHtcbiAgbWFyZ2luOiAwO1xufVxuXG4vKiBIVE1MNSBkaXNwbGF5IGRlZmluaXRpb25zXG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIENvcnJlY3QgYGJsb2NrYCBkaXNwbGF5IG5vdCBkZWZpbmVkIGZvciBhbnkgSFRNTDUgZWxlbWVudCBpbiBJRSA4LzkuXG4gKiBDb3JyZWN0IGBibG9ja2AgZGlzcGxheSBub3QgZGVmaW5lZCBmb3IgYGRldGFpbHNgIG9yIGBzdW1tYXJ5YCBpbiBJRSAxMC8xMVxuICogYW5kIEZpcmVmb3guXG4gKiBDb3JyZWN0IGBibG9ja2AgZGlzcGxheSBub3QgZGVmaW5lZCBmb3IgYG1haW5gIGluIElFIDExLlxuICovXG5cbmFydGljbGUsXG5hc2lkZSxcbmRldGFpbHMsXG5maWdjYXB0aW9uLFxuZmlndXJlLFxuZm9vdGVyLFxuaGVhZGVyLFxuaGdyb3VwLFxubWFpbixcbm1lbnUsXG5uYXYsXG5zZWN0aW9uLFxuc3VtbWFyeSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKipcbiAqIDEuIENvcnJlY3QgYGlubGluZS1ibG9ja2AgZGlzcGxheSBub3QgZGVmaW5lZCBpbiBJRSA4LzkuXG4gKiAyLiBOb3JtYWxpemUgdmVydGljYWwgYWxpZ25tZW50IG9mIGBwcm9ncmVzc2AgaW4gQ2hyb21lLCBGaXJlZm94LCBhbmQgT3BlcmEuXG4gKi9cblxuYXVkaW8sXG5jYW52YXMsXG5wcm9ncmVzcyxcbnZpZGVvIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrOyAvKiAxICovXG4gIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgLyogMiAqL1xufVxuXG4vKipcbiAqIFByZXZlbnQgbW9kZXJuIGJyb3dzZXJzIGZyb20gZGlzcGxheWluZyBgYXVkaW9gIHdpdGhvdXQgY29udHJvbHMuXG4gKiBSZW1vdmUgZXhjZXNzIGhlaWdodCBpbiBpT1MgNSBkZXZpY2VzLlxuICovXG5cbmF1ZGlvOm5vdChbY29udHJvbHNdKSB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGhlaWdodDogMDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIGBbaGlkZGVuXWAgc3R5bGluZyBub3QgcHJlc2VudCBpbiBJRSA4LzkvMTAuXG4gKiBIaWRlIHRoZSBgdGVtcGxhdGVgIGVsZW1lbnQgaW4gSUUgOC85LzExLCBTYWZhcmksIGFuZCBGaXJlZm94IDwgMjIuXG4gKi9cblxuW2hpZGRlbl0sXG50ZW1wbGF0ZSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIExpbmtzXG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIFJlbW92ZSB0aGUgZ3JheSBiYWNrZ3JvdW5kIGNvbG9yIGZyb20gYWN0aXZlIGxpbmtzIGluIElFIDEwLlxuICovXG5cbmEge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuLyoqXG4gKiBJbXByb3ZlIHJlYWRhYmlsaXR5IHdoZW4gZm9jdXNlZCBhbmQgYWxzbyBtb3VzZSBob3ZlcmVkIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5hOmFjdGl2ZSxcbmE6aG92ZXIge1xuICBvdXRsaW5lOiAwO1xufVxuXG4vKiBUZXh0LWxldmVsIHNlbWFudGljc1xuICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cblxuLyoqXG4gKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgOC85LzEwLzExLCBTYWZhcmksIGFuZCBDaHJvbWUuXG4gKi9cblxuYWJiclt0aXRsZV0ge1xuICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkO1xufVxuXG4vKipcbiAqIEFkZHJlc3Mgc3R5bGUgc2V0IHRvIGBib2xkZXJgIGluIEZpcmVmb3ggNCssIFNhZmFyaSwgYW5kIENocm9tZS5cbiAqL1xuXG5iLFxuc3Ryb25nIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi8qKlxuICogQWRkcmVzcyBzdHlsaW5nIG5vdCBwcmVzZW50IGluIFNhZmFyaSBhbmQgQ2hyb21lLlxuICovXG5cbmRmbiB7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cblxuLyoqXG4gKiBBZGRyZXNzIHZhcmlhYmxlIGBoMWAgZm9udC1zaXplIGFuZCBtYXJnaW4gd2l0aGluIGBzZWN0aW9uYCBhbmQgYGFydGljbGVgXG4gKiBjb250ZXh0cyBpbiBGaXJlZm94IDQrLCBTYWZhcmksIGFuZCBDaHJvbWUuXG4gKi9cblxuaDEge1xuICBmb250LXNpemU6IDJlbTtcbiAgbWFyZ2luOiAwLjY3ZW0gMDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgOC85LlxuICovXG5cbm1hcmsge1xuICBiYWNrZ3JvdW5kOiAjZmYwO1xuICBjb2xvcjogIzAwMDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIGluY29uc2lzdGVudCBhbmQgdmFyaWFibGUgZm9udCBzaXplIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5zbWFsbCB7XG4gIGZvbnQtc2l6ZTogODAlO1xufVxuXG4vKipcbiAqIFByZXZlbnQgYHN1YmAgYW5kIGBzdXBgIGFmZmVjdGluZyBgbGluZS1oZWlnaHRgIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5zdWIsXG5zdXAge1xuICBmb250LXNpemU6IDc1JTtcbiAgbGluZS1oZWlnaHQ6IDA7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lO1xufVxuXG5zdXAge1xuICB0b3A6IC0wLjVlbTtcbn1cblxuc3ViIHtcbiAgYm90dG9tOiAtMC4yNWVtO1xufVxuXG4vKiBFbWJlZGRlZCBjb250ZW50XG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIFJlbW92ZSBib3JkZXIgd2hlbiBpbnNpZGUgYGFgIGVsZW1lbnQgaW4gSUUgOC85LzEwLlxuICovXG5cbmltZyB7XG4gIGJvcmRlcjogMDtcbn1cblxuLyoqXG4gKiBDb3JyZWN0IG92ZXJmbG93IG5vdCBoaWRkZW4gaW4gSUUgOS8xMC8xMS5cbiAqL1xuXG5zdmc6bm90KDpyb290KSB7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi8qIEdyb3VwaW5nIGNvbnRlbnRcbiAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuICogQWRkcmVzcyBtYXJnaW4gbm90IHByZXNlbnQgaW4gSUUgOC85IGFuZCBTYWZhcmkuXG4gKi9cblxuZmlndXJlIHtcbiAgbWFyZ2luOiAxZW0gNDBweDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIGRpZmZlcmVuY2VzIGJldHdlZW4gRmlyZWZveCBhbmQgb3RoZXIgYnJvd3NlcnMuXG4gKi9cblxuaHIge1xuICAtbW96LWJveC1zaXppbmc6IGNvbnRlbnQtYm94O1xuICBib3gtc2l6aW5nOiBjb250ZW50LWJveDtcbiAgaGVpZ2h0OiAwO1xufVxuXG4vKipcbiAqIENvbnRhaW4gb3ZlcmZsb3cgaW4gYWxsIGJyb3dzZXJzLlxuICovXG5cbnByZSB7XG4gIG92ZXJmbG93OiBhdXRvO1xufVxuXG4vKipcbiAqIEFkZHJlc3Mgb2RkIGBlbWAtdW5pdCBmb250IHNpemUgcmVuZGVyaW5nIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5jb2RlLFxua2JkLFxucHJlLFxuc2FtcCB7XG4gIGZvbnQtZmFtaWx5OiBtb25vc3BhY2UsIG1vbm9zcGFjZTtcbiAgZm9udC1zaXplOiAxZW07XG59XG5cbi8qIEZvcm1zXG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIEtub3duIGxpbWl0YXRpb246IGJ5IGRlZmF1bHQsIENocm9tZSBhbmQgU2FmYXJpIG9uIE9TIFggYWxsb3cgdmVyeSBsaW1pdGVkXG4gKiBzdHlsaW5nIG9mIGBzZWxlY3RgLCB1bmxlc3MgYSBgYm9yZGVyYCBwcm9wZXJ0eSBpcyBzZXQuXG4gKi9cblxuLyoqXG4gKiAxLiBDb3JyZWN0IGNvbG9yIG5vdCBiZWluZyBpbmhlcml0ZWQuXG4gKiAgICBLbm93biBpc3N1ZTogYWZmZWN0cyBjb2xvciBvZiBkaXNhYmxlZCBlbGVtZW50cy5cbiAqIDIuIENvcnJlY3QgZm9udCBwcm9wZXJ0aWVzIG5vdCBiZWluZyBpbmhlcml0ZWQuXG4gKiAzLiBBZGRyZXNzIG1hcmdpbnMgc2V0IGRpZmZlcmVudGx5IGluIEZpcmVmb3ggNCssIFNhZmFyaSwgYW5kIENocm9tZS5cbiAqL1xuXG5idXR0b24sXG5pbnB1dCxcbm9wdGdyb3VwLFxuc2VsZWN0LFxudGV4dGFyZWEge1xuICBjb2xvcjogaW5oZXJpdDsgLyogMSAqL1xuICBmb250OiBpbmhlcml0OyAvKiAyICovXG4gIG1hcmdpbjogMDsgLyogMyAqL1xufVxuXG4vKipcbiAqIEFkZHJlc3MgYG92ZXJmbG93YCBzZXQgdG8gYGhpZGRlbmAgaW4gSUUgOC85LzEwLzExLlxuICovXG5cbmJ1dHRvbiB7XG4gIG92ZXJmbG93OiB2aXNpYmxlO1xufVxuXG4vKipcbiAqIEFkZHJlc3MgaW5jb25zaXN0ZW50IGB0ZXh0LXRyYW5zZm9ybWAgaW5oZXJpdGFuY2UgZm9yIGBidXR0b25gIGFuZCBgc2VsZWN0YC5cbiAqIEFsbCBvdGhlciBmb3JtIGNvbnRyb2wgZWxlbWVudHMgZG8gbm90IGluaGVyaXQgYHRleHQtdHJhbnNmb3JtYCB2YWx1ZXMuXG4gKiBDb3JyZWN0IGBidXR0b25gIHN0eWxlIGluaGVyaXRhbmNlIGluIEZpcmVmb3gsIElFIDgvOS8xMC8xMSwgYW5kIE9wZXJhLlxuICogQ29ycmVjdCBgc2VsZWN0YCBzdHlsZSBpbmhlcml0YW5jZSBpbiBGaXJlZm94LlxuICovXG5cbmJ1dHRvbixcbnNlbGVjdCB7XG4gIHRleHQtdHJhbnNmb3JtOiBub25lO1xufVxuXG4vKipcbiAqIDEuIEF2b2lkIHRoZSBXZWJLaXQgYnVnIGluIEFuZHJvaWQgNC4wLiogd2hlcmUgKDIpIGRlc3Ryb3lzIG5hdGl2ZSBgYXVkaW9gXG4gKiAgICBhbmQgYHZpZGVvYCBjb250cm9scy5cbiAqIDIuIENvcnJlY3QgaW5hYmlsaXR5IHRvIHN0eWxlIGNsaWNrYWJsZSBgaW5wdXRgIHR5cGVzIGluIGlPUy5cbiAqIDMuIEltcHJvdmUgdXNhYmlsaXR5IGFuZCBjb25zaXN0ZW5jeSBvZiBjdXJzb3Igc3R5bGUgYmV0d2VlbiBpbWFnZS10eXBlXG4gKiAgICBgaW5wdXRgIGFuZCBvdGhlcnMuXG4gKi9cblxuYnV0dG9uLFxuaHRtbCBpbnB1dFt0eXBlPVwiYnV0dG9uXCJdLCAvKiAxICovXG5pbnB1dFt0eXBlPVwicmVzZXRcIl0sXG5pbnB1dFt0eXBlPVwic3VibWl0XCJdIHtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBidXR0b247IC8qIDIgKi9cbiAgY3Vyc29yOiBwb2ludGVyOyAvKiAzICovXG59XG5cbi8qKlxuICogUmUtc2V0IGRlZmF1bHQgY3Vyc29yIGZvciBkaXNhYmxlZCBlbGVtZW50cy5cbiAqL1xuXG5idXR0b25bZGlzYWJsZWRdLFxuaHRtbCBpbnB1dFtkaXNhYmxlZF0ge1xuICBjdXJzb3I6IGRlZmF1bHQ7XG59XG5cbi8qKlxuICogUmVtb3ZlIGlubmVyIHBhZGRpbmcgYW5kIGJvcmRlciBpbiBGaXJlZm94IDQrLlxuICovXG5cbmJ1dHRvbjo6LW1vei1mb2N1cy1pbm5lcixcbmlucHV0OjotbW96LWZvY3VzLWlubmVyIHtcbiAgYm9yZGVyOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG4vKipcbiAqIEFkZHJlc3MgRmlyZWZveCA0KyBzZXR0aW5nIGBsaW5lLWhlaWdodGAgb24gYGlucHV0YCB1c2luZyBgIWltcG9ydGFudGAgaW5cbiAqIHRoZSBVQSBzdHlsZXNoZWV0LlxuICovXG5cbmlucHV0IHtcbiAgbGluZS1oZWlnaHQ6IG5vcm1hbDtcbn1cblxuLyoqXG4gKiBJdCdzIHJlY29tbWVuZGVkIHRoYXQgeW91IGRvbid0IGF0dGVtcHQgdG8gc3R5bGUgdGhlc2UgZWxlbWVudHMuXG4gKiBGaXJlZm94J3MgaW1wbGVtZW50YXRpb24gZG9lc24ndCByZXNwZWN0IGJveC1zaXppbmcsIHBhZGRpbmcsIG9yIHdpZHRoLlxuICpcbiAqIDEuIEFkZHJlc3MgYm94IHNpemluZyBzZXQgdG8gYGNvbnRlbnQtYm94YCBpbiBJRSA4LzkvMTAuXG4gKiAyLiBSZW1vdmUgZXhjZXNzIHBhZGRpbmcgaW4gSUUgOC85LzEwLlxuICovXG5cbmlucHV0W3R5cGU9XCJjaGVja2JveFwiXSxcbmlucHV0W3R5cGU9XCJyYWRpb1wiXSB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7IC8qIDEgKi9cbiAgcGFkZGluZzogMDsgLyogMiAqL1xufVxuXG4vKipcbiAqIEZpeCB0aGUgY3Vyc29yIHN0eWxlIGZvciBDaHJvbWUncyBpbmNyZW1lbnQvZGVjcmVtZW50IGJ1dHRvbnMuIEZvciBjZXJ0YWluXG4gKiBgZm9udC1zaXplYCB2YWx1ZXMgb2YgdGhlIGBpbnB1dGAsIGl0IGNhdXNlcyB0aGUgY3Vyc29yIHN0eWxlIG9mIHRoZVxuICogZGVjcmVtZW50IGJ1dHRvbiB0byBjaGFuZ2UgZnJvbSBgZGVmYXVsdGAgdG8gYHRleHRgLlxuICovXG5cbmlucHV0W3R5cGU9XCJudW1iZXJcIl06Oi13ZWJraXQtaW5uZXItc3Bpbi1idXR0b24sXG5pbnB1dFt0eXBlPVwibnVtYmVyXCJdOjotd2Via2l0LW91dGVyLXNwaW4tYnV0dG9uIHtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuXG4vKipcbiAqIDEuIEFkZHJlc3MgYGFwcGVhcmFuY2VgIHNldCB0byBgc2VhcmNoZmllbGRgIGluIFNhZmFyaSBhbmQgQ2hyb21lLlxuICogMi4gQWRkcmVzcyBgYm94LXNpemluZ2Agc2V0IHRvIGBib3JkZXItYm94YCBpbiBTYWZhcmkgYW5kIENocm9tZVxuICogICAgKGluY2x1ZGUgYC1tb3pgIHRvIGZ1dHVyZS1wcm9vZikuXG4gKi9cblxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXSB7XG4gIC13ZWJraXQtYXBwZWFyYW5jZTogdGV4dGZpZWxkOyAvKiAxICovXG4gIC1tb3otYm94LXNpemluZzogY29udGVudC1ib3g7XG4gIC13ZWJraXQtYm94LXNpemluZzogY29udGVudC1ib3g7IC8qIDIgKi9cbiAgYm94LXNpemluZzogY29udGVudC1ib3g7XG59XG5cbi8qKlxuICogUmVtb3ZlIGlubmVyIHBhZGRpbmcgYW5kIHNlYXJjaCBjYW5jZWwgYnV0dG9uIGluIFNhZmFyaSBhbmQgQ2hyb21lIG9uIE9TIFguXG4gKiBTYWZhcmkgKGJ1dCBub3QgQ2hyb21lKSBjbGlwcyB0aGUgY2FuY2VsIGJ1dHRvbiB3aGVuIHRoZSBzZWFyY2ggaW5wdXQgaGFzXG4gKiBwYWRkaW5nIChhbmQgYHRleHRmaWVsZGAgYXBwZWFyYW5jZSkuXG4gKi9cblxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXTo6LXdlYmtpdC1zZWFyY2gtY2FuY2VsLWJ1dHRvbixcbmlucHV0W3R5cGU9XCJzZWFyY2hcIl06Oi13ZWJraXQtc2VhcmNoLWRlY29yYXRpb24ge1xuICAtd2Via2l0LWFwcGVhcmFuY2U6IG5vbmU7XG59XG5cbi8qKlxuICogRGVmaW5lIGNvbnNpc3RlbnQgYm9yZGVyLCBtYXJnaW4sIGFuZCBwYWRkaW5nLlxuICovXG5cbmZpZWxkc2V0IHtcbiAgYm9yZGVyOiAxcHggc29saWQgI2MwYzBjMDtcbiAgbWFyZ2luOiAwIDJweDtcbiAgcGFkZGluZzogMC4zNWVtIDAuNjI1ZW0gMC43NWVtO1xufVxuXG4vKipcbiAqIDEuIENvcnJlY3QgYGNvbG9yYCBub3QgYmVpbmcgaW5oZXJpdGVkIGluIElFIDgvOS8xMC8xMS5cbiAqIDIuIFJlbW92ZSBwYWRkaW5nIHNvIHBlb3BsZSBhcmVuJ3QgY2F1Z2h0IG91dCBpZiB0aGV5IHplcm8gb3V0IGZpZWxkc2V0cy5cbiAqL1xuXG5sZWdlbmQge1xuICBib3JkZXI6IDA7IC8qIDEgKi9cbiAgcGFkZGluZzogMDsgLyogMiAqL1xufVxuXG4vKipcbiAqIFJlbW92ZSBkZWZhdWx0IHZlcnRpY2FsIHNjcm9sbGJhciBpbiBJRSA4LzkvMTAvMTEuXG4gKi9cblxudGV4dGFyZWEge1xuICBvdmVyZmxvdzogYXV0bztcbn1cblxuLyoqXG4gKiBEb24ndCBpbmhlcml0IHRoZSBgZm9udC13ZWlnaHRgIChhcHBsaWVkIGJ5IGEgcnVsZSBhYm92ZSkuXG4gKiBOT1RFOiB0aGUgZGVmYXVsdCBjYW5ub3Qgc2FmZWx5IGJlIGNoYW5nZWQgaW4gQ2hyb21lIGFuZCBTYWZhcmkgb24gT1MgWC5cbiAqL1xuXG5vcHRncm91cCB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4vKiBUYWJsZXNcbiAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuICogUmVtb3ZlIG1vc3Qgc3BhY2luZyBiZXR3ZWVuIHRhYmxlIGNlbGxzLlxuICovXG5cbnRhYmxlIHtcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcbiAgYm9yZGVyLXNwYWNpbmc6IDA7XG59XG5cbnRkLFxudGgge1xuICBwYWRkaW5nOiAwO1xufVxuIiwiLyogUEFORVNcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSAqL1xuXG4ucGFuZUNvbnRhaW5lciB7XG4gIHBhZGRpbmctdG9wOiAxLjVlbTtcbiAgcGFkZGluZy1ib3R0b206IDEuNWVtO1xufVxuXG4vKiBCYWNrZ3JvdW5kICovXG4uYmFja2dyb3VuZCB7XG5cdHBvc2l0aW9uOiBhYnNvbHV0ZTtcblx0dG9wOiAwO1xuXHRsZWZ0OiAwO1xuXHRoZWlnaHQ6IDEwMCU7XG5cdHdpZHRoOiAxMDAlO1xuICB6LWluZGV4OiAtMTA7XG59XG5cbi8qIFBhbmUgSGVhZGVyICovXG4uc3RlcExhYmVsIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW4tYm90dG9tOiAxLjVyZW07XG4gIHBhZGRpbmc6IDAuNzVlbSAwLjc1ZW0gMC41ZW07XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbGV0dGVyLXNwYWNpbmc6IDAuMDFlbTtcbiAgZm9udC1zaXplOiAwLjc1ZW07XG4gIGxpbmUtaGVpZ2h0OiAxO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsMCwwLDAuMSk7XG59XG4ucGFuZVRpdGxlIHtcbiAgbWFyZ2luOiAwIDFyZW0gMS4yNXJlbSAwO1xuICBmb250LXdlaWdodDogMjAwO1xuICBmb250LXNpemU6IDIuNWVtO1xuICBsaW5lLWhlaWdodDogMS4xMjU7XG59XG5cbi8qIFBhbmUgQ29udGVudCAqL1xuLnBhbmVDb250ZW50IHtcbiAgbWFyZ2luLXJpZ2h0OiAxcmVtO1xuICBmb250LXNpemU6IDEuMTI1ZW07XG59XG4ucGFuZUNvbnRlbnQgLmJ1dHRvbkFjdGlvbixcbi5wYW5lQ29udGVudCBwIHtcbiAgbWFyZ2luLWJvdHRvbTogMS41cmVtO1xufVxuLnBhbmVDb250ZW50IC5sYXJnZVRleHQge1xuICBkaXNwbGF5OiBibG9jaztcbiAgZm9udC1zaXplOiAxLjMyNWVtO1xufVxuXG4vKiBCdXR0b24gQmFyICovXG4ucGFuZUJ1dHRvbnMge1xuXHRwb3NpdGlvbjogYWJzb2x1dGU7XG5cdGJvdHRvbTogMDtcblx0bGVmdDogMDtcblx0cGFkZGluZzogMC43NWVtIDA7XG5cdHdpZHRoOiAxMDAlO1xuXHR0ZXh0LWFsaWduOiByaWdodDtcblx0YmFja2dyb3VuZDogI2ZmZjtcblx0Zm9udC1zaXplOiAxLjEyNWVtO1xufVxuLnBhbmVCdXR0b25zIC5jb250YWluZXIge1xuICBwYWRkaW5nOiAwIDAuNzVlbTtcbn1cbi5wYW5lQnV0dG9ucyAuYnV0dG9uQ29uZmlybSB7XG4gIGJhY2tncm91bmQ6ICMwMDgyNzI7XG4gIGNvbG9yOiAjZmZmO1xufVxuLnBhbmVCdXR0b25zIC5idXR0b25Db25maXJtOmhvdmVyIHtcbiAgYmFja2dyb3VuZDogIzAwYTQ5MDtcbn1cblxuLyogUEFORVMgLSBSRVNQT05TSVZFXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cblxuLyogVmVyeSBTaG9ydCBCcm93c2VycyAqL1xuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LWhlaWdodDogMjZlbSkge1xuXG4gIC5wYW5lVGl0bGUsXG4gIC5wYW5lQ29udGVudCAuYnV0dG9uQWN0aW9uLFxuICAucGFuZUNvbnRlbnQgcCB7XG4gICAgbWFyZ2luLWJvdHRvbTogMXJlbTtcbiAgfVxuICAuc3RlcExhYmVsIHtcbiAgICBtYXJnaW4tYm90dG9tOiAwLjVyZW07XG4gICAgcGFkZGluZzogMDtcbiAgICBmb250LXNpemU6IDAuNzVlbTtcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgfVxuICAucGFuZVRpdGxlIHtcbiAgICBmb250LXNpemU6IDEuNzVlbTtcbiAgfSBcbiAgXG59XG5cbi8qIFRhYmxldCsgKi9cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNTBlbSkge1xuICBcbiAgLnBhbmVCdXR0b25zIC5jb250YWluZXIge1xuXHRcdHBhZGRpbmctcmlnaHQ6IDA7XG5cdFx0cGFkZGluZy1sZWZ0OiAwO1xuXHR9XG5cdFxufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA1MGVtKSBhbmQgKG1pbi1oZWlnaHQ6IDM3LjVlbSkge1xuICBcbiAgLnBhbmVUaXRsZSxcbiAgLnBhbmVDb250ZW50IC5idXR0b25BY3Rpb24sXG4gIC5wYW5lQ29udGVudCBwIHtcbiAgICBtYXJnaW4tYm90dG9tOiAzcmVtO1xuICB9XG4gIC5zdGVwTGFiZWwge1xuICAgIGZvbnQtc2l6ZTogMC43NWVtO1xuICB9XG5cdFxufVxuIiwiLnByb21wdFRleHQge1xuICBtYXJnaW46IGF1dG87XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICBjb2xvcjogd2hpdGU7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIHdpZHRoOiA4MCU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC1zaXplOiAzMDAlO1xufVxuXG4ubGFyZ2VCdXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiBhdXRvO1xuICB3aWR0aDogNTAwcHg7XG4gIGhlaWdodDogMTc1cHg7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbiAgZm9udC1zaXplOiAzZW07XG5cbn1cblxuLmNlbnRlcmVkVGV4dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDMwMCU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiBhdXRvO1xuICB3aWR0aDogNTAwcHg7XG4gIGhlaWdodDogMjUwcHg7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMDtcbn1cblxuLmNvbnRlbnRDb250YWluZXIge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgYm90dG9tOiAwO1xuICBsZWZ0OiAwO1xuICByaWdodDogMDtcbiAgd2lkdGg6IDcwJTtcbiAgaGVpZ2h0OiA4MCU7XG4gIG1hcmdpbjogYXV0bztcbiAgZm9udC13ZWlnaHQ6IDYwMDtcbn1cblxuLyogVFlQT0dSQVBIWVxuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG5cbmJvZHkge1xuICBmb250LXdlaWdodDogMjAwO1xuXHRmb250LXNpemU6IDEwMCU7XG5cdGZvbnQtZmFtaWx5OiBcIkhlbHZldGljYSBOZXVlXCIsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWY7XG5cdGJhY2tncm91bmQ6ICMyYjJiMmI7XG5cdGNvbG9yOiAjZmZmO1xuXHRsaW5lLWhlaWdodDogMS41O1xufVxuXG5sYWJlbCwgLmxhYmVsIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIG1hcmdpbi1ib3R0b206IDAuMjVlbTtcbn1cbmlucHV0LCAudmFsdWUge1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luLWJvdHRvbTogMS4yNXJlbTtcbiAgcGFkZGluZzogMC43NXJlbSAwLjc1cmVtIDAuNXJlbTtcbiAgbWF4LXdpZHRoOiA2MDBweDtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwyNTUsMjU1LDAuOCk7XG4gIGNvbG9yOiAjNDE0MTQxO1xuICBsaW5lLWhlaWdodDogMS4yNTtcbn1cbi52YWx1ZUNsaWNrYWJsZSB7XG4gIGN1cnNvcjogcG9pbnRlcjsgIFxufVxuXG4vKiBWZXJ5IFNob3J0IEJyb3dzZXJzICovXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtaGVpZ2h0OiAyNmVtKSB7XG4gIGJvZHkge1xuICAgIGZvbnQtc2l6ZTogNzUlO1xuICB9IFxufVxuXG4vKiBUYWJsZXQrICovXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDUwZW0pIGFuZCAobWluLWhlaWdodDogMzcuNWVtKSB7XG4gIGJvZHkge1xuICAgIGZvbnQtc2l6ZTogMTI1JTtcbiAgfSBcbn1cblxuLyogTEFZT1VUXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cblxuKiwgKjpiZWZvcmUsICo6YWZ0ZXIge1xuICAtbW96LWJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIC13ZWJraXQtYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cbi5jb250YWluZXIge1xuXHRtYXJnaW46IDAgYXV0bztcblx0cGFkZGluZzogMCAxLjVyZW07XG5cdHdpZHRoOiAxMDAlO1xuXHRtYXgtd2lkdGg6IDE0MDBweDtcbn1cblxuLyogVGFibGV0KyAqL1xuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA1MGVtKSB7XG5cdC5jb250YWluZXIge1xuXHRcdHBhZGRpbmctcmlnaHQ6IDA7XG5cdFx0cGFkZGluZy1sZWZ0OiAwO1xuXHRcdHdpZHRoOiA5MCU7XG5cdH1cbn1cblxuLyogQlVUVE9OU1xuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXG4uYnV0dG9uQWN0aW9uIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBib3JkZXI6IDAgbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogNnB4O1xuICBwYWRkaW5nOiAwLjVlbSAwLjc1ZW07XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lO1xuICBvdXRsaW5lOiBub25lO1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBjb2xvcjogIzAwODI3MjtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmJ1dHRvbkFjdGlvbjpob3ZlciB7XG4gIGNvbG9yOiAjMDBhNDkwO1xufSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

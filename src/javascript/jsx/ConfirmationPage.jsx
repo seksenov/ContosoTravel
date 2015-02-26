@@ -8,13 +8,26 @@ var ConfirmationPage = React.createClass({
   render: function() {
     return (
       <div>
-        <div className="contentContainer">
-          <div className="largeText">Enjoy your trip to {this.props.city}!</div>
-          <div className="largeText">From: {this.props.dates.departure}</div>
-          <div className="largeText">Until: {this.props.dates.returning}</div>
-          <button className="confirmButton action-button button-animate blue" onClick={this.handleToast}>Toast Notification</button>
+        <div className="container paneContainer">
+          <span className="stepLabel">Success</span>
+          <h2 className="paneTitle">Enjoy your trip to {this.props.city}!</h2>
+          <div className="paneContent">
+            <p>
+              <span className="label">From</span>
+              <span className="largeText">{this.props.dates.departure}</span>
+            </p>
+            <p>
+              <span className="label">Until</span>
+              <span className="largeText">{this.props.dates.returning}</span>
+            </p>
+          </div>
         </div>
-          <div className="background Airplane"></div>
+        <div className="paneButtons">
+        	<div className="container">
+            <button className="buttonAction buttonConfirm" onClick={this.handleToast}>Toast Notification</button>
+	        </div>
+        </div>
+        <div className="background Airplane"></div>
       </div>
     );
   }

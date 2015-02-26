@@ -45,8 +45,8 @@ exports.addContact = function(cb) {
     });
   } else {
     console.log("ERROR: No Windows namespace was detected");  
-    //cb({'name': 'test'}, null);
-    cb(null, "No Windows namespace was detected");
+    cb({'name': 'You are going with [name]'}, null);
+    //cb(null, "No Windows namespace was detected");
   }
 }
 exports.showToast = function(message) {

@@ -100,10 +100,10 @@ html, body {
   -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.right {
-  right: 17px;
+  right: 0.5rem;
 }
 #fp-nav.left {
-  left: 17px;
+  left: 0.5rem;
 }
 .fp-slidesNav{
   position: absolute;
@@ -127,7 +127,7 @@ html, body {
   display: block;
   width: 14px;
   height: 13px;
-  margin: 7px;
+  margin: 7px 0;
   position:relative;
 }
 .fp-slidesNav ul li {
