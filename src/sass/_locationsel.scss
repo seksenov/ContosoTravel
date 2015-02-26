@@ -11,7 +11,7 @@
   width: 50%;
   text-align: center;
 }
-.dest:before {
+.destTitle:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,10 +22,22 @@
 }
 .destTitle {
   position: absolute;
-  top: 50%;
-  margin-top: -0.75em;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
   text-align: center;
+}
+.destTitle:hover {
+  cursor: pointer;
+}
+.destTitle .buttonAction {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.75em;
+  padding: 0;
+  left: 0;
+  width: 100%;
 }
 .destTitle .buttonAction {
   margin-top: -0.75em;
@@ -51,7 +63,7 @@
   left: 50%;
 }
 
-.Paris:before,
-.London:before {
+.Paris .destTitle:before,
+.London .destTitle:before {
   background: rgba(3,94,96,0.5);
 }
