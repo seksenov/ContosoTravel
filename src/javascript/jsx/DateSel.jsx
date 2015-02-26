@@ -58,7 +58,9 @@ var DateSel = React.createClass({
             </div> 
         </div>
         <div id="calendarContainer">
-          <div id="datepicker" className="calendar"></div>
+          <div id="datepicker" className="calendar">
+            <div className="datepicker"></div>
+          </div>
         </div>
         </div>
         <div className="paneButtons">
