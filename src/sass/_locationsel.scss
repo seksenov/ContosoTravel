@@ -1,55 +1,55 @@
 #destContainer {
   position: absolute;
-  height: 100%;
+  bottom: 0;
+  left: 0;
+  height: calc(100% - 11em);
   width: 100%;
-  padding: 0;
-  margin: 0;
-  &:after {
-    content: '';
-    margin-top: 100%;
-    margin-bottom: 100%;
-  }
 }
-
-#locationPrompt {
+.dest {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+.dest:before {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  background-color: black;
-  color: white;
-  font-size: 60px;
+  height: 100%;
+  width: 100%;
+  background: rgba(2,52,97,0.25);
+  content: '';
+}
+.destTitle {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.75em;
+  width: 100%;
   text-align: center;
-  vertical-align: middle;
-  width: 750px;
-  height: 75px;
-
+}
+.destTitle .buttonAction {
+  margin-top: -0.75em;
+  padding: 0.25em 0.5em;
 }
 
-.title {
-  font-size: 300%;
-  color: white;
-  text-align: center;
-  top: calc(50% - 25px);
-  background-color: black;
-  position: relative;
-  width: 250px;
+.Barcelona {
+  top: 0;
   left: 0;
-  right: 0;
-  margin: auto;
-
+}
+.Paris {
+  top: 0;
+  left: 50%;
+}
+.London {
+  top: 50%;
+  left: 0;
+}
+.Seattle {
+  top: 50%;
+  left: 50%;
 }
 
-.dest {
-  width: 50%;
-  height: 50%;
-  float: left;
-}
-
-#dest1 {
-}
-
-#dest4 {
+.Paris:before,
+.London:before {
+  background: rgba(3,94,96,0.25);
 }

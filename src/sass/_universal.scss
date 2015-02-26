@@ -55,6 +55,7 @@ body {
   font-weight: 200;
 	font-size: 100%;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #2b2b2b;
 	color: #fff;
 	line-height: 1.5;
 }
@@ -117,15 +118,11 @@ input, .value {
 
 /* BUTTONS
 --------------------------------------------- */
-.buttonAnimate {
-  transition: all 0.1s;
-}
-
 .buttonAction {
   display: inline-block;
   border: 0 none;
   border-radius: 6px;
-  padding: 0.5em 0.5em 0.25em;
+  padding: 0.5em 0.75em;
   text-decoration: none;
   background: #fff;
   color: #008272;
