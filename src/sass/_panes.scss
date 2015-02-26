@@ -74,14 +74,45 @@
 /* PANES - RESPONSIVE
 --------------------------------------------- */
 
+/* Very Short Browsers */
+@media only screen and (max-height: 26em) {
+
+  .paneTitle,
+  .paneContent .buttonAction,
+  .paneContent p {
+    margin-bottom: 1rem;
+  }
+  .stepLabel {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    font-size: 0.75em;
+    background: transparent;
+  }
+  .paneTitle {
+    font-size: 1.75em;
+  } 
+  
+}
+
+/* Tablet+ */
 @media only screen and (min-width: 50em) {
   
-  .stepLabel {
-    font-size: 0.5em;
-  }
-	.paneButtons .container {
+  .paneButtons .container {
 		padding-right: 0;
 		padding-left: 0;
 	}
+	
+}
+@media only screen and (min-width: 50em) and (min-height: 37.5em) {
+  
+  .stepLabel,
+  .paneTitle,
+  .paneContent .buttonAction,
+  .paneContent p {
+    margin-bottom: 3rem;
+  }
+  .stepLabel {
+    font-size: 0.5em;
+  }
 	
 }

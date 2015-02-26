@@ -79,17 +79,17 @@ input, .value {
   cursor: pointer;  
 }
 
-/* Tablet */
-@media only screen and (min-width: 50em) {
+/* Very Short Browsers */
+@media only screen and (max-height: 26em) {
   body {
-    font-size: 150%;
+    font-size: 75%;
   } 
 }
 
-/* Desktop */
-@media only screen and (min-width: 56.25em) {
+/* Tablet+ */
+@media only screen and (min-width: 50em) and (min-height: 37.5em) {
   body {
-    font-size: 200%;
+    font-size: 125%;
   } 
 }
 
