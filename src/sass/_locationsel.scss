@@ -17,7 +17,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(2,52,97,0.25);
+  background: rgba(2,52,97,0.5);
   content: '';
 }
 .destTitle {
@@ -29,7 +29,9 @@
 }
 .destTitle .buttonAction {
   margin-top: -0.75em;
-  padding: 0.25em 0.5em;
+  font-size: 1.5em;
+  background: transparent;
+  color: #fff;
 }
 
 .Barcelona {
@@ -51,5 +53,5 @@
 
 .Paris:before,
 .London:before {
-  background: rgba(3,94,96,0.25);
+  background: rgba(3,94,96,0.5);
 }
