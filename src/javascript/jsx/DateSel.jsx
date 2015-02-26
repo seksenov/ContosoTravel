@@ -50,7 +50,7 @@ var DateSel = React.createClass({
         <div className="paneContent">
             <div className="dateText" id="departure" onClick={this.handleClick.bind(this, 'departure')}>
               <span className="label">Departure</span>
-              <span className="value dateClickable">{this.state.departure}</span>
+              <span className="value valueClickable dateClickable">{this.state.departure}</span>
             </div> 
             <div className="dateText" id="returning" onClick={this.handleClick.bind(this, 'returning')}>
               <span className="textLabel">Return</span>

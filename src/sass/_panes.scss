@@ -29,7 +29,8 @@
   background: rgba(0,0,0,0.1);
 }
 .paneTitle {
-  margin: 0 1rem 1.5rem 0;
+  margin: 0 1rem 1.25rem 0;
+  font-weight: 200;
   font-size: 2.5em;
   line-height: 1.125;
 }
@@ -37,7 +38,10 @@
 /* Pane Content */
 .paneContent {
   margin-right: 1rem;
-  font-size: 1.25em;
+  font-size: 1.125em;
+}
+.paneContent .buttonAction {
+  margin-bottom: 1.5rem;
 }
 
 /* Button Bar */
@@ -49,7 +53,7 @@
 	width: 100%;
 	text-align: right;
 	background: #fff;
-	font-size: 1.25em;
+	font-size: 1.125em;
 }
 .paneButtons .container {
   padding: 0 0.75em;

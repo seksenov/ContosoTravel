@@ -13,7 +13,10 @@ var ContactSel = React.createClass({
           <h2 className="paneTitle">Who do you want to go with?</h2>
           <div className="paneContent">
             <button className="buttonAction" onClick={this.handleClick}>Choose a Friend</button>
-            <div id="contactName">{this.props.contacts}</div>
+            <div id="contactName">
+              <span className="label">You are going with</span>
+              <span className="value">{this.props.contacts}</span>
+            </div>
           </div>
         </div>
         <div className="paneButtons">

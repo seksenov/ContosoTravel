@@ -78,7 +78,9 @@ input, .value {
   background: rgba(255,255,255,0.8);
   color: #414141;
   line-height: 1.25;
-  cursor: pointer;
+}
+.valueClickable {
+  cursor: pointer;  
 }
 
 /* Tablet */
