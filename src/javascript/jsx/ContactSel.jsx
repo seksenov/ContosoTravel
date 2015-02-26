@@ -5,6 +5,9 @@ var ContactSel = React.createClass({
     this.props.winAPI();
     console.log(this.props.contacts);
   },
+  handleConfirm: function() {
+    this.props.advanceSlide(4);
+  },
   render: function() {
     return (
       <div>

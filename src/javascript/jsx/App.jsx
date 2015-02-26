@@ -40,6 +40,9 @@ var App = React.createClass({
       }
     }.bind(this));
   },
+  advanceSlide: function(slideNum) {
+    fullpage.controls.moveTo(slideNum);
+  },
   callAppointmentAPI: function() {
     plugins.addAppointment(fullpage.controls.moveTo.bind(this, 5), this.state.dates.departure, this.cities[this.state.cityIdx]);
   },
@@ -60,7 +63,7 @@ var App = React.createClass({
           <DateSel onDatesSelected={this.getSelectedDates} currentCity={this.cities[this.state.cityIdx]}></DateSel>
         </div>
         <div className="section">
-          <ContactSel ref="contactSel" contacts={this.state.contacts} winAPI={this.callContactsAPI}></ContactSel>
+          <ContactSel ref="contactSel" contacts={this.state.contacts} winAPI={this.callContactsAPI} advanceSlide={this.advanceSlide}></ContactSel>
         </div>
         <div className="section">
           <AddtoCal winAPI={this.callAppointmentAPI}></AddtoCal>
