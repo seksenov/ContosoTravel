@@ -41,7 +41,7 @@ var App = React.createClass({
     }.bind(this));
   },
   callAppointmentAPI: function() {
-    plugins.addAppointment(fullpage.controls.moveTo.bind(this, 5), this.state.date.departing, this.cities[this.state.cityIdx]);
+    plugins.addAppointment(fullpage.controls.moveTo.bind(this, 5), this.state.dates.departing, this.cities[this.state.cityIdx]);
   },
   componentDidMount: function() {
     fullpage.init('#main', {
