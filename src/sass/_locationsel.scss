@@ -67,3 +67,31 @@
 .London .destTitle:before {
   background: rgba(3,94,96,0.5);
 }
+
+/* Tablet+ */
+@media only screen and (min-width: 50em) {
+  
+  .dest {
+    height: 100%;
+    width: 25%;  
+  }
+  .Paris {
+    left: 25%;
+  }
+  .London {
+    top: 0;
+    left: 50%;
+  }
+  .Seattle {
+    top: 0;
+    left: 75%;
+    background: rgba(3,94,96,0.5);
+  }
+  .London .destTitle:before {
+    background: rgba(2,52,97,0.5);
+  }
+  .Seattle .destTitle:before {
+    background: rgba(3,94,96,0.5);
+  }
+  
+}
