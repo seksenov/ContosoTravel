@@ -1,3 +1,31 @@
+/* DATE VALUES
+--------------------------------------------- */
+
+.dateClickable {
+  position: relative;
+  padding-right: 50px;
+}
+.buttonDatePicker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 41px;
+  background: #fff;
+}
+.datePickerIcon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -13px;
+  right: 8px;
+  height: 26px;
+  width: 25px;
+}
+.dateClickable:hover .datePickerIcon {
+  opacity: 0.75;
+}
+
 /* DATE SELECTOR
 --------------------------------------------- */
 
