@@ -30,7 +30,7 @@ exports.addContact = function(cb) {
     // Open the picker for the user to select a contact 
     picker.pickContactAsync().done(function (contact) { 
       if (contact !== null) { 
-        var name = 'Leaving with: ' + contact.displayName; 
+        var name = contact.displayName; 
         console.log(name);
         //var thumbnail = URL.createObjectURL(contact.thumbnail, { oneTimeOnly: true }); 
         //var picture = document.createElement("image");
@@ -45,7 +45,7 @@ exports.addContact = function(cb) {
     });
   } else {
     console.log("ERROR: No Windows namespace was detected");  
-    cb({'name': 'You are going with [name]'}, null);
+    cb({'name': '[name]'}, null);
     //cb(null, "No Windows namespace was detected");
   }
 }

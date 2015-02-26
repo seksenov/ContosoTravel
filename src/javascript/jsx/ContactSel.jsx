@@ -1,9 +1,13 @@
 var React = require('react');
 
 var ContactSel = React.createClass({
+  getInitialState: function() {
+    return {showNames: false};
+  },
   handleClick: function() {
     this.props.winAPI();
     console.log(this.props.contacts);
+    this.setState({showNames: true});
   },
   handleConfirm: function() {
     this.props.advanceSlide(4);
@@ -16,10 +20,12 @@ var ContactSel = React.createClass({
           <h2 className="paneTitle">Who do you want to go with?</h2>
           <div className="paneContent">
             <button className="buttonAction" onClick={this.handleClick}>Choose a Friend</button>
-            <div id="contactName">
-              <span className="label">You are going with</span>
-              <span className="value">{this.props.contacts}</span>
-            </div>
+            { this.state.showNames ? 
+              <div id="contactName">
+                <span className="label">You are going with</span>
+                <span className="value">{this.props.contacts}</span>
+              </div>
+              : null }
           </div>
         </div>
         <div className="paneButtons">
