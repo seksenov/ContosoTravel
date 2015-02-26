@@ -40,8 +40,13 @@
   margin-right: 1rem;
   font-size: 1.125em;
 }
-.paneContent .buttonAction {
+.paneContent .buttonAction,
+.paneContent p {
   margin-bottom: 1.5rem;
+}
+.paneContent .largeText {
+  display: block;
+  font-size: 1.325em;
 }
 
 /* Button Bar */
