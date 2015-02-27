@@ -18,6 +18,11 @@
   height: 100%;
   width: 100%;
   background: rgba(2,52,97,0.5);
+  -webkit-transition: background 0.4s ease;
+  -moz-transition: background 0.4s ease;
+  -ms-transition: background 0.4s ease;
+  -o-transition: background 0.4s ease;
+  transition: background 0.4s ease;
   content: '';
 }
 .destTitle {
