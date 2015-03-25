@@ -1,26 +1,26 @@
 var moment = require('moment');
 
-// exports.addAppointment = function(cb, date, loc) {
-//   if (typeof Windows != 'undefined') {
-//     var appointment = new Windows.ApplicationModel.Appointments.Appointment();
+exports.addAppointment = function(cb, date, loc) {
+  if (typeof Windows != 'undefined') {
+    var appointment = new Windows.ApplicationModel.Appointments.Appointment();
 
-//     appointment.allDay = true;
-//     appointment.startTime = new Date(moment(date, 'dddd, Do MMM YYYY').format());
-//     appointment.subject = 'Trip to ' + loc;
+    appointment.allDay = true;
+    appointment.startTime = new Date(moment(date, 'dddd, Do MMM YYYY').format());
+    appointment.subject = 'Trip to ' + loc;
 
-//     Windows.ApplicationModel.Appointments.AppointmentManager.showAddAppointmentAsync(appointment, { x: 300, y: 0, width: 600, height: 100 })
-//       .done(function (appointmentId) {
-//         if (appointmentId) {
-//           console.log('created!');
-//           cb();
-//         } else {
-//           console.log('issue');
-//         }
-//       });
-//   } else {
-//     cb();
-//   }
-// }
+    Windows.ApplicationModel.Appointments.AppointmentManager.showAddAppointmentAsync(appointment, { x: 300, y: 0, width: 600, height: 100 })
+      .done(function (appointmentId) {
+        if (appointmentId) {
+          console.log('created!');
+          cb();
+        } else {
+          console.log('issue');
+        }
+      });
+  } else {
+    cb();
+  }
+}
 exports.addContact = function(cb) {
   console.log('plugin: addContact');
   if(typeof Windows != 'undefined') {
