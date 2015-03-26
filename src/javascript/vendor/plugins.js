@@ -88,3 +88,23 @@ exports.showToast = function(message) {
   }
 
 }
+exports.cortanaHandler = function(args) {
+
+  var activation = Windows.ApplicationModel.Activation;
+
+  if (args.detail.kind === activation.ActivationKind.voiceCommand) {
+    var speechRecognitionResult = args.detail.result;
+
+    // The commandMode is either "voice" or "text", and it indicates how the voice command was entered by the user.
+    // We should respect "text" mode by providing feedback in a silent form.
+    var commandMode = semanticInterpretation("commandMode", speechRecognitionResult);
+
+    // Get the name of the voice command, the actual text spoken, and the value of Command/Navigate@Target.
+    var voiceCommandName = speechRecognitionResult.rulePath[0].toString();
+    var textSpoken = speechRecognitionResult.text;
+    var navigationTarget = semanticInterpretation("NavigationTarget", speechRecognitionResult);
+
+    
+  }
+
+}
