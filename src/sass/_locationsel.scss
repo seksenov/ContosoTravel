@@ -49,15 +49,15 @@
   color: #fff;
 }
 
-.Barcelona {
+.SanFrancisco {
   top: 0;
   left: 0;
 }
-.Paris {
+.NewYork {
   top: 0;
   left: 50%;
 }
-.London {
+.Chicago {
   top: 50%;
   left: 0;
 }
@@ -66,8 +66,8 @@
   left: 50%;
 }
 
-.Paris .destTitle:before,
-.London .destTitle:before {
+.NewYork .destTitle:before,
+.Chicago .destTitle:before {
   background: rgba(3,94,96,0.5);
 }
 
@@ -78,10 +78,10 @@
     height: 100%;
     width: 25%;  
   }
-  .Paris {
+  .NewYork {
     left: 25%;
   }
-  .London {
+  .Chicago {
     top: 0;
     left: 50%;
   }
@@ -90,7 +90,7 @@
     left: 75%;
     background: rgba(3,94,96,0.5);
   }
-  .London .destTitle:before {
+  .Chicago .destTitle:before {
     background: rgba(2,52,97,0.5);
   }
   .Seattle .destTitle:before {

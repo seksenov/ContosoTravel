@@ -4,3 +4,4 @@ Desktop.ini
 node_modules
 *.swp
 src/images/
+*.bak

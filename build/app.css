@@ -104,16 +104,16 @@ body,html{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:transpa
 .destTitle:before{position:absolute;top:0;left:0;height:100%;width:100%;background:rgba(2,52,97,.5);transition:background .4s ease;content:''}
 .destTitle{position:absolute;top:0;left:0;height:100%;width:100%;text-align:center}
 .destTitle .buttonAction{position:absolute;top:50%;margin-bottom:0;padding:0;left:0;width:100%;margin-top:-.75em;font-size:1.5em;background:0 0;color:#fff}
-.Barcelona{top:0;left:0}
-.Paris{top:0;left:50%}
-.London{top:50%;left:0}
+.SanFrancisco{top:0;left:0}
+.NewYork{top:0;left:50%}
+.Chicago{top:50%;left:0}
 .Seattle{top:50%;left:50%}
-.London .destTitle:before,.Paris .destTitle:before{background:rgba(3,94,96,.5)}
+.Chicago .destTitle:before,.NewYork .destTitle:before{background:rgba(3,94,96,.5)}
 @media only screen and (min-width:50em){.dest{height:100%;width:25%}
-.Paris{left:25%}
-.London{top:0;left:50%}
+.NewYork{left:25%}
+.Chicago{top:0;left:50%}
 .Seattle{top:0;left:75%;background:rgba(3,94,96,.5)}
-.London .destTitle:before{background:rgba(2,52,97,.5)}
+.Chicago .destTitle:before{background:rgba(2,52,97,.5)}
 .Seattle .destTitle:before{background:rgba(3,94,96,.5)}}
 .destTitle:hover{cursor:pointer}
 .destTitle:hover:before{background:rgba(255,255,255,.2)}
@@ -140,14 +140,14 @@ body,html{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:transpa
 .ui-state-active{background:rgba(0,164,144,.1)}
 .ui-datepicker-unselectable .ui-state-default{color:#eee}
 @media only screen and (min-width:50em) and (min-height:37.5em){.ui-datepicker{-webkit-transform:scale(1.5);transform:scale(1.5)}}
-.Barcelona{background:url(./images/BarcelonaMain.jpg) center center no-repeat;background-size:cover}
+.SanFrancisco{background:url(./images/SanFranciscoMain.jpg) center center no-repeat;background-size:cover}
 .Seattle{background:url(./images/SeattleMain.jpg) center center no-repeat;background-size:cover}
-.London{background:url(./images/LondonMain.jpg) center center no-repeat;background-size:cover}
-.Paris{background:url(./images/ParisMain.jpg) center center no-repeat;background-size:cover}
-.BarcelonaSecond{background:url(./images/BarcelonaSecond.jpg) center center no-repeat;background-size:cover}
-.BarcelonaThird{background:url(./images/BarcelonaThird.jpg) center center no-repeat;background-size:cover}
-.LondonSecond{background:url(./images/LondonSecond.jpg) center center no-repeat;background-size:cover}
-.ParisSecond{background:url(./images/ParisSecond.jpg) center center no-repeat;background-size:cover}
+.Chicago{background:url(./images/ChicagoMain.jpg) center center no-repeat;background-size:cover}
+.NewYork{background:url(./images/NewYorkMain.jpg) center center no-repeat;background-size:cover}
+.SanFranciscoSecond{background:url(./images/SanFranciscoSecond.jpg) center center no-repeat;background-size:cover}
+.SanFranciscoThird{background:url(./images/SanFranciscoThird.jpg) center center no-repeat;background-size:cover}
+.ChicagoSecond{background:url(./images/ChicagoSecond.jpg) center center no-repeat;background-size:cover}
+.NewYorkSecond{background:url(./images/NewYorkSecond.jpg) center center no-repeat;background-size:cover}
 .SeattleSecond{background:url(./images/SeattleSecond.jpg) center center no-repeat;background-size:cover}
 .Airplane{background:url(./images/Airplane.jpg) center center no-repeat;background-size:cover}
 .Friends{background:url(./images/Friends.jpg) center center no-repeat;background-size:cover}

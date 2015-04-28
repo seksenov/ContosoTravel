@@ -3,36 +3,36 @@
   background-size: cover;
 }
 
-.Barcelona {
-  @include fullBgImg('./images/BarcelonaMain.jpg');
+.SanFrancisco {
+  @include fullBgImg('./images/SanFranciscoMain.jpg');
 }
 
 .Seattle {
   @include fullBgImg('./images/SeattleMain.jpg');
 }
 
-.London {
-  @include fullBgImg('./images/LondonMain.jpg');
+.Chicago {
+  @include fullBgImg('./images/ChicagoMain.jpg');
 }
 
-.Paris {
-  @include fullBgImg('./images/ParisMain.jpg');
+.NewYork {
+  @include fullBgImg('./images/NewYorkMain.jpg');
 }
 
-.BarcelonaSecond {
-  @include fullBgImg('./images/BarcelonaSecond.jpg');
+.SanFranciscoSecond {
+  @include fullBgImg('./images/SanFranciscoSecond.jpg');
 }
 
-.BarcelonaThird {
-  @include fullBgImg('./images/BarcelonaThird.jpg');
+.SanFranciscoThird {
+  @include fullBgImg('./images/SanFranciscoThird.jpg');
 }
 
-.LondonSecond {
-  @include fullBgImg('./images/LondonSecond.jpg');
+.ChicagoSecond {
+  @include fullBgImg('./images/ChicagoSecond.jpg');
 }
 
-.ParisSecond {
-  @include fullBgImg('./images/ParisSecond.jpg');
+.NewYorkSecond {
+  @include fullBgImg('./images/NewYorkSecond.jpg');
 }
 
 .SeattleSecond {

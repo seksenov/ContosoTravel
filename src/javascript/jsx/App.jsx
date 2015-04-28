@@ -18,9 +18,9 @@ var App = React.createClass({
     };
   },
   cities: [
-    'Barcelona', 
-    'Paris',
-    'London',
+    'SanFrancisco', 
+    'NewYork',
+    'Chicago',
     'Seattle'
   ],
   getClickedCityIdx: function(idx) {
