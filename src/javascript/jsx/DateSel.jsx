@@ -68,7 +68,7 @@ var DateSel = React.createClass({
 	        	<button className="buttonAction buttonConfirm" onClick={this.handleConfirm}>Confirm</button>
 	        </div>
         </div>
-        <div className ={this.props.currentCity + "Second background"}></div>
+        <div className ={this.props.currentCity.replace(/\s+/g, '') + "Second background"}></div>
         </div>
     );
   }
