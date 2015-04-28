@@ -18,8 +18,8 @@ var App = React.createClass({
     };
   },
   cities: [
-    'SanFrancisco', 
-    'NewYork',
+    'San Francisco', 
+    'New York',
     'Chicago',
     'Seattle'
   ],

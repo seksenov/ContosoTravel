@@ -17,7 +17,7 @@ var LocationSel = React.createClass({
             <div id="destContainer">
               {this.props.cities.map(function(city, i) {
               return (
-                <div className={"dest " + city} onClick={this.handleClick.bind(this, i)} key={i}>
+                <div className={"dest " + city.replace(/\s+/g, '')} onClick={this.handleClick.bind(this, i)} key={i}>
                   <div className="destTitle">
                     <span className="buttonAction">{city}</span>
                   </div>
