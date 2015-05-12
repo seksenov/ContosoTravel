@@ -37,6 +37,7 @@
     "browser-sync": "^2.7.1",
     "browserify": "^8.0.2",
     "browserify-shim": "^3.8.2",
+    "del": "^1.1.1",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "^2.0.0",
     "gulp-changed": "^0.4.1",
@@ -57,6 +58,7 @@
     "pretty-hrtime": "~0.2.1",
     "reactify": "^0.17.1",
     "require-dir": "^0.1.0",
+    "underscore": "^1.8.3",
     "vinyl-source-stream": "~0.1.1",
     "watchify": "^2.2.1"
   },
