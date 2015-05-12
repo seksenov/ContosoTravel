@@ -5,3 +5,5 @@ node_modules
 *.swp
 src/images/
 *.bak
+build/
+.publish/

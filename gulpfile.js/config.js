@@ -1,9 +1,10 @@
-var dest = "./build";
+var dest = './build';
 var src = './src';
 var reactify = require('reactify');
 var reactifyES6 = function(file) {
   return reactify(file, {'es6': true});
 };
+
 
 module.exports = {
   browserSync: {
@@ -13,7 +14,7 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/sass/*.{sass,scss}",
+    src: src + '/sass/*.{sass,scss}',
     dest: dest,
     settings: {
       // Required if you want to use SASS syntax
@@ -23,22 +24,26 @@ module.exports = {
     }
   },
   lint: {
-	src: src + "/javascript/*.js"
+    src: src + '/javascript/*.js'
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + '/images/**',
+    dest: dest + '/images'
   },
   markup: {
-    src: src + "/htdocs/**",
-    dest: dest
+    src: [src + '/htdocs/**/*.html', '!**/templates/**'],
+    watch: src + '/htdocs/**/*.html',
+    dest: dest,
+    swig: {
+      defaults: {cache: false}
+    }
   },
   browserify: {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
       entries: src + '/javascript/main.js',
-	  transform: [reactifyES6],
+      transform: [reactifyES6],
       dest: dest,
       outputName: 'main.js',
       // list of modules to make require-able externally
@@ -49,5 +54,11 @@ module.exports = {
     cssSrc: dest + '/*.css',
     jsSrc: dest + '/*.js',
     dest: dest
+  },
+  clean: {
+    src: dest
+  },
+  deploy: {
+    src: dest + '/**/*'
   }
 };
