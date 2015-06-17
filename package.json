@@ -7,8 +7,8 @@
     "url": ""
   },
   "browser": {
-    "fullPage": "./src/javascript/vendor/jquery.fullPage.js",
-    "plugins": "./src/javascript/vendor/plugins.js"
+    "fullPage": "./src/bundles/vendor/jquery.fullPage.js",
+    "plugins": "./src/bundles/vendor/plugins.js"
   },
   "browserify": {
     "transform": [
