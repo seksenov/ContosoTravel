@@ -1,16 +1,18 @@
 var dest = './build';
 var src = './src';
+var port = 3000;
+
 var reactify = require('reactify');
 var reactifyES6 = function(file) {
   return reactify(file, {'es6': true});
 };
 
-
 module.exports = {
   browserSync: {
     server: {
       // Serve up our build folder
-      baseDir: dest
+      baseDir: dest,
+      port: port
     }
   },
   sass: {
@@ -24,7 +26,7 @@ module.exports = {
     }
   },
   lint: {
-    src: src + '/javascript/*.js'
+    src: [src + '/bundles/**/*.js', src + '/misc/**/*.js']
   },
   images: {
     src: src + '/images/**',
@@ -38,11 +40,22 @@ module.exports = {
       defaults: {cache: false}
     }
   },
+  misc: {
+    src: src + '/misc/**',
+    dest: dest
+  },
+  ngrok: {
+    port: port
+  },
+  appx: {
+    src: src + '/appxmanifest.xml',
+    dest: dest + '/appxmanifest.xml'
+  },
   browserify: {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: src + '/javascript/main.js',
+      entries: src + '/bundles/main.js',
       transform: [reactifyES6],
       dest: dest,
       outputName: 'main.js',
