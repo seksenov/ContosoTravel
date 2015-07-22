@@ -1,6 +1,6 @@
 {
   "start_url": "http://contosotravel.azurewebsites.net",
-  "short_name": "ContosoTravel",
+  "short_name": "Contoso Travel",
   "icons": [
     {
       "src": "http://contosotravel.azurewebsites.net/images/logo.png",
@@ -9,5 +9,5 @@
   ],
   "display": "fullscreen",
   "orientation": "any",
-  "name": "ContosoTravel"
+  "name": "Contoso Travel"
 }
