@@ -1,12 +1,12 @@
 {
-  "start_url": "http://contosotravel.azurewebsites.net",
-  "short_name": "ContosoTravel",
+  "start_url": "/",
+  "short_name": "Contoso Travel",
   "icons": [
     {
-      "src": "http://contosotravel.azurewebsites.net/images/logo.png",
+      "src": "http://travelContoso.azurewebsites.net/images/logo.png",
       "sizes": "150x150"
     }
   ],
   "display": "fullscreen",
-  "name": "ContosoTravel"
+  "name": "Contoso Travel"
 }
