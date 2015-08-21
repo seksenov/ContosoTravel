@@ -30,7 +30,7 @@ var ContactSel = React.createClass({
         </div>
         <div className="paneButtons">
         	<div className="container">
-	        	<button className="buttonAction buttonConfirm" onClick={this.handleConfirm}>Confirm</button>
+	        	<button className="buttonAction buttonConfirm" tabindex="6" onClick={this.handleConfirm}>Confirm</button>
 	        </div>
         </div>
         <div className="Friends background"></div>
