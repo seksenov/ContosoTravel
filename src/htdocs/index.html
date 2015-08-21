@@ -4,9 +4,17 @@
 	<meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="app.css">
     <link rel="manifest" href="manifest.json">
+    
   </head>
   <body>
     <script src="main.js"></script>
-    <script src="WinJS-XYFocus.js"></script>
+    <script src="images/WinJS-XYFocus.js"></script>
+    <script type="text/javascript">
+      WinJS.UI.XYFocus.keyCodeMap.up.push(38);
+      WinJS.UI.XYFocus.keyCodeMap.down.push(40);
+      WinJS.UI.XYFocus.keyCodeMap.left.push(37);
+      WinJS.UI.XYFocus.keyCodeMap.right.push(39);
+    </script>
+    
   </body>
 </html>
