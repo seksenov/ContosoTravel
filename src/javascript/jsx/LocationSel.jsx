@@ -19,7 +19,7 @@ var LocationSel = React.createClass({
               return (
                 <div className={"dest " + city.replace(/\s+/g, '')} onClick={this.handleClick.bind(this, i)} key={i}>
                   <div className="destTitle">
-                    <span className="buttonAction" tabindex={i}>{city}</span>
+                    <span className="buttonAction" data-tabindex={i}>{city}</span>
                   </div>
                 </div>
               );

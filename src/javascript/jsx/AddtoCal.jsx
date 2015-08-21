@@ -11,7 +11,7 @@ var AddtoCal = React.createClass({
           <span className="stepLabel">Step 4 of 4</span>
           <h2 className="paneTitle">Add to System Calendar?</h2>
           <div className="paneContent">
-            <button className="buttonAction" tabindex="5" onClick={this.handleClick}>Add to Calendar</button>
+            <button className="buttonAction" data-tabindex="5" onClick={this.handleClick}>Add to Calendar</button>
           </div>
         </div>
         <div className="background Calendar"></div>

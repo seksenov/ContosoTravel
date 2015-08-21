@@ -24,7 +24,7 @@ var ConfirmationPage = React.createClass({
         </div>
         <div className="paneButtons">
         	<div className="container">
-            <button className="buttonAction buttonConfirm" tabindex="7" onClick={this.handleToast}>Toast Notification</button>
+            <button className="buttonAction buttonConfirm" data-tabindex="7" onClick={this.handleToast}>Toast Notification</button>
 	        </div>
         </div>
         <div className="background Airplane"></div>
