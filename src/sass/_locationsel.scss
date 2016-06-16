@@ -49,25 +49,25 @@
   color: #fff;
 }
 
-.SanFrancisco {
+.Nairobi {
   top: 0;
   left: 0;
 }
-.NewYork {
+.Mombasa {
   top: 0;
   left: 50%;
 }
-.Chicago {
+.Nakuru {
   top: 50%;
   left: 0;
 }
-.Seattle {
+.Thika {
   top: 50%;
   left: 50%;
 }
 
-.NewYork .destTitle:before,
-.Chicago .destTitle:before {
+.Mombasa .destTitle:before,
+.Nakuru .destTitle:before {
   background: rgba(3,94,96,0.5);
 }
 
@@ -78,22 +78,22 @@
     height: 100%;
     width: 25%;  
   }
-  .NewYork {
+  .Mombasa {
     left: 25%;
   }
-  .Chicago {
+  .Nakuru {
     top: 0;
     left: 50%;
   }
-  .Seattle {
+  .Thika {
     top: 0;
     left: 75%;
     background: rgba(3,94,96,0.5);
   }
-  .Chicago .destTitle:before {
+  .Nakuru .destTitle:before {
     background: rgba(2,52,97,0.5);
   }
-  .Seattle .destTitle:before {
+  .Thika .destTitle:before {
     background: rgba(3,94,96,0.5);
   }
   

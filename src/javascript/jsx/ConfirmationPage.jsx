@@ -10,7 +10,7 @@ var ConfirmationPage = React.createClass({
       <div>
         <div className="container paneContainer">
           <span className="stepLabel">Success</span>
-          <h2 className="paneTitle">Enjoy your trip to {this.props.city}!</h2>
+          <h2 className="paneTitle">Enjoy your trip to, and stay at {this.props.city}!</h2>
           <div className="paneContent">
             <p>
               <span className="label">From</span>

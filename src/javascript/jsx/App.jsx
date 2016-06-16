@@ -18,10 +18,10 @@ var App = React.createClass({
     };
   },
   cities: [
-    'San Francisco', 
-    'New York',
-    'Chicago',
-    'Seattle'
+    'Nairobi', 
+    'Mombasa',
+    'Nakuru',
+    'Thika'
   ],
   getClickedCityIdx: function(idx) {
     this.setState({cityIdx: idx}, function() {
