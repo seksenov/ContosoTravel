@@ -1,7 +1,7 @@
 {
-  "name": "WinRTDemo",
+  "name": "HotelDemo",
   "version": "0.0.1",
-  "description": "WinRT Demo for Hosted Apps",
+  "description": "Hotel Demo for Hosted Apps",
   "repository": {
     "type": "git",
     "url": ""
