@@ -1,9 +1,9 @@
 {
-  "start_url": "http://hoteldemo.azurewebsites.net",
+  "start_url": "https://thehoteldemo.azurewebsites.net",
   "short_name": "Hotel Demo",
   "icons": [
     {
-      "src": "http://hoteldemo.azurewebsites.net/images/logo.png",
+      "src": "https://thehoteldemo.azurewebsites.net/images/logo.png",
       "sizes": "150x150"
     }
   ],
