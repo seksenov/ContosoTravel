@@ -1,5 +1,5 @@
-# ContosoTravel
+# HotelDemo
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
-###Greatest travel app around
+###Greatest hotel app around
