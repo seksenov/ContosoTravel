@@ -1,13 +1,13 @@
 {
-  "start_url": "http://contosotravel.azurewebsites.net",
-  "short_name": "Contoso Travel",
+  "start_url": "http://hoteldemo.azurewebsites.net",
+  "short_name": "Hotel Demo",
   "icons": [
     {
-      "src": "http://contosotravel.azurewebsites.net/images/logo.png",
+      "src": "http://hoteldemo.azurewebsites.net/images/logo.png",
       "sizes": "150x150"
     }
   ],
   "display": "fullscreen",
   "orientation": "any",
-  "name": "Contoso Travel"
+  "name": "Hotel Demo"
 }

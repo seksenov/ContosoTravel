@@ -60,7 +60,7 @@ exports.showToast = function(message) {
     //Supply an image for the notification
     var toastImageElements = toastXml.getElementsByTagName("image");
     //Set the image this could be the background of the note, get the image from the web
-    toastImageElements[0].setAttribute("src", "https://raw.githubusercontent.com/seksenov/ContosoTravel/master/build/images/storelogo.png");
+    toastImageElements[0].setAttribute("src", "https://raw.githubusercontent.com/dansef/HotelDemo/master/build/images/storelogo.png"); //"https://raw.githubusercontent.com/seksenov/ContosoTravel/master/build/images/storelogo.png");
     toastImageElements[0].setAttribute("alt", "red graphic");
     //Specify a long duration
     var toastNode = toastXml.selectSingleNode("/toast");

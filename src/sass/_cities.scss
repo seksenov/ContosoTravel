@@ -3,40 +3,40 @@
   background-size: cover;
 }
 
-.SanFrancisco {
-  @include fullBgImg('./images/SanFranciscoMain.jpg');
+.Nairobi {
+  @include fullBgImg('./images/NairobiMain.jpg');
 }
 
-.Seattle {
-  @include fullBgImg('./images/SeattleMain.jpg');
+.Thika {
+  @include fullBgImg('./images/ThikaMain.jpg');
 }
 
-.Chicago {
-  @include fullBgImg('./images/ChicagoMain.jpg');
+.Nakuru {
+  @include fullBgImg('./images/NakuruMain.jpg');
 }
 
-.NewYork {
-  @include fullBgImg('./images/NewYorkMain.jpg');
+.Mombasa {
+  @include fullBgImg('./images/MombasaMain.jpg');
 }
 
-.SanFranciscoSecond {
-  @include fullBgImg('./images/SanFranciscoSecond.jpg');
+.NairobiSecond {
+  @include fullBgImg('./images/NairobiSecond.jpg');
 }
 
-.SanFranciscoThird {
-  @include fullBgImg('./images/SanFranciscoThird.jpg');
+.NairobiThird {
+  @include fullBgImg('./images/NairobiThird.jpg');
 }
 
-.ChicagoSecond {
-  @include fullBgImg('./images/ChicagoSecond.jpg');
+.NakuruSecond {
+  @include fullBgImg('./images/NakuruSecond.jpg');
 }
 
-.NewYorkSecond {
-  @include fullBgImg('./images/NewYorkSecond.jpg');
+.MombasaSecond {
+  @include fullBgImg('./images/MombasaSecond.jpg');
 }
 
-.SeattleSecond {
-  @include fullBgImg('./images/SeattleSecond.jpg');
+.ThikaSecond {
+  @include fullBgImg('./images/ThikaSecond.jpg');
 }
 
 .Airplane {
